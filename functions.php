@@ -40,11 +40,14 @@ if ( ! function_exists( 'fuse_eng_setup' ) ) :
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
-		add_theme_support( 'post-thumbnails' );
+    add_theme_support( 'post-thumbnails' );
+    add_image_size('home-feature', 1800, 500, false);
+    add_image_size('feature-img', 1800, 400, false);
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'fuse_eng' ),
+      'main-menu'    => esc_html__( 'Main Menu', 'fuse_eng' ),
+      'footer-menu'  => esc_html__( 'Footer Menu', 'fuse_eng' )
 		) );
 
 		/*
@@ -59,26 +62,9 @@ if ( ! function_exists( 'fuse_eng_setup' ) ) :
 			'caption',
 		) );
 
-		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'fuse_eng_custom_background_args', array(
-			'default-color' => 'ffffff',
-			'default-image' => '',
-		) ) );
-
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
-		/**
-		 * Add support for core custom logo.
-		 *
-		 * @link https://codex.wordpress.org/Theme_Logo
-		 */
-		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
-			'flex-width'  => true,
-			'flex-height' => true,
-		) );
 	}
 endif;
 add_action( 'after_setup_theme', 'fuse_eng_setup' );
@@ -124,13 +110,101 @@ function fuse_eng_scripts() {
 
 	wp_enqueue_script( 'fuse_eng-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'fuse_eng-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+  wp_enqueue_script( 'fuse_eng-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+
+  wp_enqueue_script('fuse-eng-object-fit-library', get_template_directory_uri() . '/js/min/ofi.min.js', NULL, NULL, TRUE);
+
+  if( is_front_page() ) {
+    wp_enqueue_script('flickity', get_template_directory_uri() . '/js/min/flickity.min.js', NULL, NULL, TRUE);
+
+    wp_enqueue_script('home-testimonial-carousel', get_template_directory_uri() . '/js/min/home-testimonial-carousel.js', array('flickity'), NULL, TRUE);
+  }
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'fuse_eng_scripts' );
+
+/**
+ * Global Site Information
+ */
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page(array(
+		'page_title' 	=> 'Global Website Information',
+		'menu_title'	=> 'Site Global Info',
+		'menu_slug' 	=> 'global-information',
+		'post_id' 	  => 'global-information',
+    'capability'	=> 'edit_posts',
+    'redirect'    => false
+  ));
+
+  acf_add_options_sub_page(array(
+    'page_title' 	=> 'SocialSettings',
+    'menu_title'	=> 'Social',
+    'parent_slug'	=> 'global-information',
+    'post_id' 	  => 'social'
+  ));
+}
+
+/**
+ * ADD CUSTOM ALLOWED HTML TAGS
+ */
+
+if(!function_exists('custom_add_allowed_tags')) {
+  function custom_add_allowed_tags($tags) {
+    $tags['iframe'] = array(
+      'src'             => array(),
+      'height'          => array(),
+      'width'           => array(),
+      'frameborder'     => array(),
+      'allowfullscreen' => array(),
+    );
+
+    return $tags;
+  }
+  add_filter('wp_kses_allowed_html', 'custom_add_allowed_tags');
+}
+
+/**
+ * ADD STYLES TO WYSIWYG
+ */
+
+// Insert 'styleselect' into the $buttons array
+function my_mce_buttons_2( $buttons ) {
+    array_unshift( $buttons, 'styleselect' );
+    return $buttons;
+}
+// Use 'mce_buttons' for button row #1, mce_buttons_3' for button row #3
+add_filter('mce_buttons_2', 'my_mce_buttons_2');
+
+function my_mce_before_init_insert_formats( $init_array ) {
+    $style_formats = array(
+      array(
+        'title' => 'Button', // Title to show in dropdown
+        'block' => 'button', // Element to add class to
+        'classes' => 'btn' // CSS class to add
+      )
+    );
+    $init_array['style_formats'] = json_encode( $style_formats );
+    return $init_array;
+}
+add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
+
+// EDITOR STYLES
+
+function fuse_eng_add_editor_styles() {
+  add_editor_style( 'custom-editor-style.css' );
+}
+add_action( 'admin_init', 'fuse_eng_add_editor_styles' );
+
+/**
+ * Move Yoast to bottom
+ */
+function yoast_to_bottom() {
+	return 'low';
+}
+add_filter( 'wpseo_metabox_prio', 'yoast_to_bottom');
 
 /**
  * Implement the Custom Header feature.
@@ -158,4 +232,9 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+ * Custom Header Image.
+ */
+require get_template_directory() . '/inc/custom-header-img.php';
 

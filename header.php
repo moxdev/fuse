@@ -27,7 +27,6 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
-			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -47,14 +46,14 @@
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'fuse_eng' ); ?></button>
 			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
+			  wp_nav_menu( array(
+				  'theme_location' => 'main-menu',
+				  'menu_id'        => 'primary-menu',
+			  ) );
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
-  <?php // fuse_eng_post_thumbnail(); ?>
+  <?php if( function_exists( 'fuse_eng_custom_header_section' ) ) : fuse_eng_custom_header_section(); endif; ?>
 
 	<div id="content" class="site-content">

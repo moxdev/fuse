@@ -10,34 +10,8 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <?php
-    if (! function_exists( 'fuse_eng_seo_page_titles' ) ) :
-      function fuse_eng_seo_page_titles() {
-        if(function_exists('get_field')) {
-          $onPageTitle = get_field('on_page_title');
 
-          if($onPageTitle) { ?>
-            <header class="entry-header">
-              <h1 class="entry-title">
-                <?php echo wp_kses(
-                  $onPageTitle,
-                  array(
-                    'span' => array(),
-                    'em' => array(),
-                    'strong' => array()
-                  )
-                ); ?>
-              </h1>
-            </header><!-- .entry-header -->
-          <?php } else { ?>
-            <header class="entry-header">
-              <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-            </header><!-- .entry-header -->
-          <?php }
-        }
-      }
-    endif;
-  ?>
+  <?php fuse_eng_seo_page_titles(); ?>
 
 	<div class="entry-content">
 		<?php

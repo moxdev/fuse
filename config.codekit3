@@ -48,6 +48,16 @@
 		"oAP": "\/comments.php",
 		"oF": 0
 		},
+	"\/custom-editor-style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/custom-editor-style-min.css",
+		"oF": 1,
+		"oS": 3
+		},
 	"\/footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -74,6 +84,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/header.php",
+		"oF": 0
+		},
+	"\/inc\/custom-header-img.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/custom-header-img.php",
 		"oF": 0
 		},
 	"\/inc\/custom-header.php": {
@@ -128,6 +145,60 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/flickity.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/flickity.min.js",
+		"oF": 3,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/home-testimonial-carousel.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/home-testimonial-carousel.min.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/min\/flickity.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/flickity.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/min\/flickity.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/js\/min\/flickity.min.js.map",
+		"oF": 0
+		},
+	"\/js\/min\/home-testimonial-carousel.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/home-testimonial-carousel.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/min\/home-testimonial-carousel.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/js\/min\/home-testimonial-carousel.min.js.map",
+		"oF": 0
+		},
 	"\/js\/min\/navigation.min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -145,12 +216,39 @@
 		"oAP": "\/js\/min\/navigation.min.js.map",
 		"oF": 0
 		},
+	"\/js\/min\/ofi.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/ofi.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/min\/ofi.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/js\/min\/ofi.min.js.map",
+		"oF": 0
+		},
 	"\/js\/navigation.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/min\/navigation.min.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/js\/ofi.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/ofi.min.js",
 		"oF": 2,
 		"sC": 3,
 		"tS": 1
@@ -367,6 +465,13 @@
 		"oAP": "\/sass\/.sass-cache\/372ee78419be8ab95bccc4f6deed4e6d59c6b84a\/_variables-site.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/39f81692464632d7eb1199531f9811b5f4330304\/_front-page.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/39f81692464632d7eb1199531f9811b5f4330304\/_front-page.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/782e66eba03fd2da283e7fbff7f53d9702dbbffa\/_links.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -428,6 +533,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/dfd89eccb9e3743ecf61b9072e3cd8785ac73243\/_clearings.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/dfd89eccb9e3743ecf61b9072e3cd8785ac73243\/_flickity.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/dfd89eccb9e3743ecf61b9072e3cd8785ac73243\/_flickity.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/dfd89eccb9e3743ecf61b9072e3cd8785ac73243\/_infinite-scroll.scssc": {
@@ -563,6 +675,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/front-page\/_front-page.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/front-page\/_front-page.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/layout\/_content-sidebar.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -680,6 +805,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/modules\/_flickity.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/modules\/_flickity.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/modules\/_infinite-scroll.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -728,6 +866,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/navigation\/_navigation.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-templates\/_page-templates.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/_page-templates.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

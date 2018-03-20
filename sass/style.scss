@@ -40,7 +40,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Infinite scroll
 # Media
 	## Captions
-	## Galleries
+  ## Galleries
+# Front Page
+# Page Templates
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
@@ -69,6 +71,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Navigation
 --------------------------------------------------------------*/
 @import "navigation/navigation";
+
+/*--------------------------------------------------------------
+# Flickity Styles
+--------------------------------------------------------------*/
+@import "modules/flickity";
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -104,3 +111,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+/*--------------------------------------------------------------
+# Front Page
+--------------------------------------------------------------*/
+@import "front-page/front-page";
+
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+@import "page-templates/page-templates";
