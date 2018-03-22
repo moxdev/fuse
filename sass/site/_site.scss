@@ -10,7 +10,22 @@
 --------------------------------------------------------------*/
 @import "primary/comments";
 
+#page {
+  position: relative;
+}
 
+#content {
+  @include padding-left-right;
+  @include section-padding;
+  text-align: center;
+  background-color: $color__brand-2;
+  color: #fff;
+  @include font-smooth;
+
+  h1 {
+    color: $color__brand-1;
+  }
+}
 // img {
 //   object-fit: cover;
 //   font-family: "object-fit: cover";
