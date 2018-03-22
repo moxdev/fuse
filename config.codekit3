@@ -162,16 +162,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/js\/flickity.js": {
-		"ft": 64,
-		"ma": 1,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/flickity.min.js",
-		"oF": 3,
-		"sC": 3,
-		"tS": 0
-		},
 	"\/js\/home-testimonial-carousel.js": {
 		"ft": 64,
 		"ma": 1,
@@ -186,18 +176,11 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/min\/flickity.min-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 0
-		},
-	"\/js\/min\/flickity.min.js.map": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/js\/min\/flickity.min.js.map",
-		"oF": 0
 		},
 	"\/js\/min\/home-testimonial-carousel.min.js": {
 		"ft": 64,
@@ -503,6 +486,34 @@
 		"oAP": "\/sass\/.sass-cache\/39f81692464632d7eb1199531f9811b5f4330304\/_front-page.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/39f81692464632d7eb1199531f9811b5f4330304\/_hero.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/39f81692464632d7eb1199531f9811b5f4330304\/_hero.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/39f81692464632d7eb1199531f9811b5f4330304\/_learn-more-video.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/39f81692464632d7eb1199531f9811b5f4330304\/_learn-more-video.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/39f81692464632d7eb1199531f9811b5f4330304\/_main-content.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/39f81692464632d7eb1199531f9811b5f4330304\/_main-content.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/39f81692464632d7eb1199531f9811b5f4330304\/_testimonial.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/39f81692464632d7eb1199531f9811b5f4330304\/_testimonial.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/782e66eba03fd2da283e7fbff7f53d9702dbbffa\/_links.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -635,6 +646,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/colophon\/_colophon.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/colophon\/_colophon.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/elements\/_elements.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -739,6 +763,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/front-page\/_learn-more-video.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/front-page\/_learn-more-video.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/front-page\/_main-content.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -748,6 +785,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/front-page\/_main-content.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/front-page\/_testimonial.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/front-page\/_testimonial.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

@@ -117,7 +117,7 @@ function fuse_eng_scripts() {
   if( is_front_page() ) {
     wp_enqueue_script('flickity', get_template_directory_uri() . '/js/min/flickity.min.js', NULL, NULL, TRUE);
 
-    wp_enqueue_script('home-testimonial-carousel', get_template_directory_uri() . '/js/min/home-testimonial-carousel.js', array('flickity'), NULL, TRUE);
+    wp_enqueue_script('home-testimonial-carousel', get_template_directory_uri() . '/js/min/home-testimonial-carousel.min.js', array('flickity'), NULL, TRUE);
   }
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

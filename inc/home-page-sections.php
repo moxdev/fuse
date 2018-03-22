@@ -36,71 +36,67 @@ function fuse_eng_home_page_sections() {
             $testimonial_header = get_sub_field( 'testimonial_header' );
             $testimonial_button = get_sub_field( 'testimonial_button' ); ?>
 
-            <div class="home-testimonial-section">
+            <section class="home-testimonial">
               <div class="wrapper">
-                <div class="content-wrapper">
-                  <h2><?php echo wp_kses_post( $testimonial_header ); ?></h2>
+                <h2><?php echo wp_kses_post( $testimonial_header ); ?></h2>
+                <div class="divider">
+                  <span class="quote">"</span>
+                  <hr>
+                </div>
 
-                  <?php if ($testimonial) {
-                      // WP_Query arguments
-                      $args = array(
-                          'post_type'   => array( 'testimonials' ),
-                          'post_status' => array( 'publish' ),
-                          'nopaging'    => true,
-                          'order'       => 'DESC',
-                          'orderby'     => 'date',
-                      );
-                      // The Query
-                      $testimonials = new WP_Query( $args );
-                      // The Loop
-                      if ( $testimonials->have_posts() ) { ?>
 
-                        <div class="home-testimonial">
-                          <div class="home-testimonial-wrapper">
-                            <div class="testimonial-carousel">
+                <?php if ($testimonial) {
+                    // WP_Query arguments
+                    $args = array(
+                        'post_type'   => array( 'testimonials' ),
+                        'post_status' => array( 'publish' ),
+                        'nopaging'    => true,
+                        'order'       => 'DESC',
+                        'orderby'     => 'date',
+                    );
+                    // The Query
+                    $testimonials = new WP_Query( $args );
+                    // The Loop
+                    if ( $testimonials->have_posts() ) { ?>
 
-                            <?php while ( $testimonials->have_posts() ) {
-                                $testimonials->the_post();
-                                $excerpt = get_field( 'testimonial_excerpt', $post->ID );
+                      <div class="testimonial">
+                        <div class="testimonial-carousel">
 
-                                ?>
+                        <?php while ( $testimonials->have_posts() ) {
+                            $testimonials->the_post();
 
-                                <div class="cell">
-                                  <div class="cell-wrapper">
+                            ?>
 
-                                    <div class="testimonial-content-wrapper">
-                                      <?php the_content(); ?>
-                                      <span class="title">&mdash; &nbsp; <?php the_title(); ?></span>
-                                    </div>
+                            <div class="cell">
+                              <div class="cell-wrapper">
+                                <?php the_content(); ?>
+                                <span class="title">&mdash; &nbsp; <?php the_title(); ?></span>
+                              </div>
+                            </div><!-- cell -->
 
-                                  </div>
-                                </div><!-- cell -->
+                          <?php
 
-                              <?php
+                        } ?>
 
-                            } ?>
+                        </div><!-- testimonial-carousel -->
+                      </div><!-- testimonial -->
 
-                            </div><!-- testimonial-carousel -->
-                          </div><!-- home-testimonial-wrapper -->
-                        </div>
+                    <?php
+                    }
+                    // Restore original Post Data
+                    wp_reset_postdata();
+                } ?>
 
-                      <?php
-                      }
-                      // Restore original Post Data
-                      wp_reset_postdata();
-                  } ?>
+                <?php if ( $testimonial_button ) : ?>
 
-                  <?php if ( $testimonial_button ) : ?>
+                  <div class="button-wrapper">
+                    <?php echo wp_kses_post( $testimonial_button ); ?>
+                  </div>
 
-                    <div class="button-wrapper">
-                      <?php echo wp_kses_post( $testimonial_button ); ?>
-                    </div>
+                <?php endif; ?>
 
-                  <?php endif; ?>
-
-                </div><!-- content-wrapper -->
               </div><!-- wrapper -->
-            </div><!-- home-testimonial-section -->
+            </section><!-- home-testimonial -->
 
             <?php endwhile;
 

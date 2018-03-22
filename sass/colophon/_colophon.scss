@@ -1,0 +1,101 @@
+#colophon {
+  padding-bottom: 2em;
+  @include padding-left-right;
+  background-color: $color__background-body;
+  font-family: $font__bold;
+  color: $color__brand-4;
+
+  .site-info {
+    text-align: center;
+
+    a {
+      color: $color__brand-4;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        a {
+          // display: block;
+          // padding: 0 1em;
+        }
+      }
+    }
+
+    .ftr-flex-child,
+    #footer-menu li {
+      margin-bottom: .5em
+    }
+
+    .logo {
+      svg {
+        width: 120px;
+      }
+    }
+
+    .contact-information {
+      .company-name,
+      .footer-tel,
+      .footer-fax,
+      .email {
+        display: block;
+      }
+    }
+
+    .social-media {
+      display: inline-flex;
+      justify-content: space-between;
+
+      li {
+        padding-right: 10px;
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+
+    .divider {
+      position: relative;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      width: 200px;
+      margin: 0 auto;
+
+      .blue-bolt {
+        display: block;
+        position: relative;
+        z-index: 2000;
+      }
+
+      hr {
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        bottom: 52px;
+        background-color: $color__brand-4;
+        z-index: 1000;
+      }
+    }
+
+    .copyright {
+      font-family: $font__light;
+    }
+
+    @include respond-to(medium) {
+      .ftr-flex-wrapper {
+        display: flex;
+        justify-content: space-between
+      }
+
+      .ftr-flex-child {
+        flex: 1 1 33%;
+      }
+
+    }
+  }
+}

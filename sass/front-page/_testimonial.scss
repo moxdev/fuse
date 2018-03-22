@@ -1,0 +1,164 @@
+.home-testimonial {
+  background-color: $color__brand-1;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  // @include font-smooth;
+
+  h2 {
+    color: $color__brand-3;
+  }
+
+  .divider {
+    position: relative;
+    padding-top: 3em;
+    width: 200px;
+    margin: 0 auto;
+
+    .quote {
+      display: block;
+      position: relative;
+      font-size: 8em;
+      line-height: 0.1em;
+      font-family: $font__medium;
+      color: $color__brand-3;
+      z-index: 2000;
+    }
+
+    hr {
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      bottom: 37px;
+      z-index: 1000;
+    }
+  }
+
+  .testimonial {
+    padding-bottom: 2em;
+  }
+
+  .testimonial-carousel {
+    color: #fff;
+    height: 100%;
+
+    .cell {
+      width: 100%;
+      height: auto;
+      margin-left: 20px;
+
+      .title {
+        display: block;
+      }
+    }
+
+    // Custom Flickity Styles
+
+    /* big buttons, no circle */
+    .flickity-prev-next-button {
+      width: 13px;
+      height: 24px;
+      background: transparent;
+      overflow: hidden;
+      display: none; // display at larger size
+
+      @include respond-to(x-small) {
+        display: block;
+      }
+    }
+    .flickity-prev-next-button:hover {
+      background: transparent;
+    }
+    /* arrow color */
+    .flickity-prev-next-button .arrow {
+      fill: white;
+    }
+    .flickity-prev-next-button.no-svg {
+      color: white;
+    }
+
+    @include respond-to(x-small) {
+      padding-left: 3em;
+      padding-right: 3em;
+    }
+
+    @include respond-to(medium) {
+      padding-left: 4em;
+      padding-right: 4em;
+    }
+  }
+
+  // @include respond-to(medium) {
+  //   .home-testimonial-wrapper {
+  //     padding-top: 9em;
+  //     padding-bottom: 3em;
+  //   }
+  //   .cell-wrapper {
+  //     display: flex;
+  //     justify-content: space-between;
+
+  //     p {
+  //       margin-bottom: 0;
+  //     }
+  //   }
+
+  //   .testimonial-carousel {
+  //     .cell {
+  //       // width: 85%;
+  //       // margin-left: 10%;
+
+  //     }
+
+  //     .flickity-prev-next-button {
+  //       width: 50px;
+  //       height: 50px;
+  //     }
+  //   }
+
+  //   .excerpt-wrapper {
+  //     flex: 1;
+  //     padding-right: 2em;
+  //   }
+
+  //   .testimonial-content-wrapper {
+  //     flex: 1;
+  //     padding-top: 1.5em;
+  //   }
+
+  //   a.btn {
+  //     margin-top: 1em;
+  //     margin-right: 22%;
+  //   }
+  // }
+
+  // @include respond-to(large) {
+  //   .home-testimonial-wrapper {
+  //     max-width: 1300px;
+
+  //     a.btn {
+  //       margin-right: 28%;
+  //     }
+  //   }
+  //   .testimonial-carousel {
+  //     padding-left: 8em;
+  //     padding-right: 8em;
+  //     .cell {
+  //       .excerpt {
+  //         padding-right: 1em;
+  //       }
+  //     }
+  //   }
+  // }
+  // @include respond-to(x-large) {
+  //   .home-testimonial-wrapper {
+  //     padding-top: 14em;
+  //   }
+  // }
+  // @include respond-to(xx-large) {
+  //   .home-testimonial-wrapper {
+  //     a.btn {
+  //       margin-right: 25%;
+  //     }
+  //   }
+  // }
+}

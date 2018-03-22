@@ -9,13 +9,17 @@ h1, h2, h3 {
   padding: 0;
 }
 
+h1, h2 {
+  font-family: $font__chunky;
+  color: $color__brand-1;
+}
+
 h1 {
 	line-height: 1;
 }
 
 h1.entry-title {
   font-size: 1.5;
-  font-family: $font__chunky;
 }
 
 h2 {

@@ -53,3 +53,7 @@ input[type="submit"] {
     @include font-size(.9);
   }
 }
+
+.home-testimonial .btn {
+  background-color: $color__brand-3;
+}
