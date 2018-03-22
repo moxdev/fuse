@@ -30,6 +30,8 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+   <?php if( function_exists( 'fuse_eng_home_page_sections' ) ) : fuse_eng_home_page_sections(); endif; ?>
+
 <?php
 
 get_footer();

@@ -14,17 +14,9 @@
   position: relative;
 }
 
-#content {
-  @include padding-left-right;
+.wrapper {
   @include section-padding;
-  text-align: center;
-  background-color: $color__brand-2;
-  color: #fff;
-  @include font-smooth;
-
-  h1 {
-    color: $color__brand-1;
-  }
+  @include padding-left-right;
 }
 // img {
 //   object-fit: cover;

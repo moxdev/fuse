@@ -41,8 +41,8 @@ if ( ! function_exists( 'fuse_eng_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
     add_theme_support( 'post-thumbnails' );
-    add_image_size('home-feature', 1800, 600, false);
-    add_image_size('feature-img', 1800, 400, false);
+    add_image_size('home-feature', 1800, 800, false);
+    add_image_size('feature-img', 1800, 600, false);
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
@@ -198,6 +198,72 @@ function fuse_eng_add_editor_styles() {
 }
 add_action( 'admin_init', 'fuse_eng_add_editor_styles' );
 
+// Register Custom Post Type for Testimonial
+function fuse_eng_create_custom_post_type() {
+
+  $labels = array(
+    'name'                  => 'Testimonials',
+    'singular_name'         => 'Testimonial',
+    'menu_name'             => 'Testimonials',
+    'name_admin_bar'        => 'Testimonials',
+    'archives'              => 'Testimonials Archives',
+    'attributes'            => 'Testimonials Attributes',
+    'parent_item_colon'     => 'Parent Item: Testimonials',
+    'all_items'             => 'All Testimonials',
+    'add_new_item'          => 'Add New Testimonial',
+    'add_new'               => 'Add New Testimonial',
+    'new_item'              => 'New Testimonial',
+    'edit_item'             => 'Edit Testimonial',
+    'update_item'           => 'Update Testimonial',
+    'view_item'             => 'View Testimonial',
+    'view_items'            => 'View Testimonials',
+    'search_items'          => 'Search Testimonials',
+    'not_found'             => 'Not found',
+    'not_found_in_trash'    => 'Not found in Trash',
+    'featured_image'        => 'Featured Image',
+    'set_featured_image'    => 'Set featured image',
+    'remove_featured_image' => 'Remove featured image',
+    'use_featured_image'    => 'Use as featured image',
+    'insert_into_item'      => 'Insert into item',
+    'uploaded_to_this_item' => 'Uploaded to this item',
+    'items_list'            => 'Items list',
+    'items_list_navigation' => 'Items list navigation',
+    'filter_items_list'     => 'Filter items list',
+  );
+  $rewrite = array(
+    'slug'                  => 'testimonial',
+    'with_front'            => true,
+    'pages'                 => true,
+    'feeds'                 => true,
+  );
+  $args = array(
+    'label'                 => 'Testimonial',
+    'description'           => 'Testimonial Section',
+    'labels'                => $labels,
+    'supports'              => array( 'title', 'editor', 'revisions' ),
+    'taxonomies'            => array( 'testimonial' ),
+    'hierarchical'          => false,
+    'public'                => true,
+    'show_ui'               => true,
+    'show_in_menu'          => true,
+    'menu_position'         => 5,
+    'menu_icon'             => 'dashicons-testimonial',
+    'show_in_admin_bar'     => true,
+    'show_in_nav_menus'     => false,
+    'can_export'            => true,
+    'has_archive'           => true,
+    'exclude_from_search'   => false,
+    'publicly_queryable'    => true,
+    'query_var'             => 'testimonial',
+    'rewrite'               => $rewrite,
+    'capability_type'       => 'page',
+    'show_in_rest'          => true,
+  );
+  register_post_type( 'testimonials', $args );
+
+}
+add_action( 'init', 'fuse_eng_create_custom_post_type', 0 );
+
 /**
  * Move Yoast to bottom
  */
@@ -237,4 +303,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Custom Header Image.
  */
 require get_template_directory() . '/inc/custom-header-img.php';
+
+/**
+ * Custom Header Image.
+ */
+require get_template_directory() . '/inc/home-page-sections.php';
 
