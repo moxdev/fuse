@@ -521,6 +521,13 @@
 		"oAP": "\/page-flexible-content.php",
 		"oF": 0
 		},
+	"\/page-services-child.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-services-child.php",
+		"oF": 0
+		},
 	"\/page.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -591,11 +598,25 @@
 		"oAP": "\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_default-header.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_page-default.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_page-default.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_page-templates.scssc": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_page-templates.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_services-child.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_services-child.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/114018b4f3c6898f270f2e200411cc85592aff25\/_buttons.scssc": {
@@ -1267,6 +1288,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/page-templates\/_services-child.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/_services-child.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/site\/_site.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1524,6 +1558,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/template-parts\/content-search.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-services-child.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-services-child.php",
 		"oF": 0
 		},
 	"\/template-parts\/content.php": {

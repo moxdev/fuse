@@ -60,6 +60,18 @@
   font-style: normal;
 }
 
+html {
+	@include font-size(0.8125);
+
+	@include respond-to(small) {
+		@include font-size(0.9375);
+	}
+
+	@include respond-to(large) {
+		@include font-size(1.1);
+	}
+}
+
 body,
 button,
 input,

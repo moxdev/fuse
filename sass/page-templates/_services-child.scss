@@ -1,0 +1,11 @@
+.page-template-page-services-child {
+
+  .header-title h2 {
+    color: #fff;
+    @extend h1;
+  }
+
+  h1.entry-title {
+    color: $color__brand-1;
+  }
+}

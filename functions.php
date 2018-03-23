@@ -195,6 +195,11 @@ function my_mce_before_init_insert_formats( $init_array ) {
         'inline' => 'span', // Element to add class to
         'classes' => 'roboto-thin-italic-text' // CSS class to add
       ),
+      array(
+        'title' => 'Read More Link', // Title to show in dropdown
+        'inline' => 'span', // Element to add class to
+        'classes' => 'read-more-link' // CSS class to add
+      )
     );
     $init_array['style_formats'] = json_encode( $style_formats );
     return $init_array;

@@ -27,6 +27,15 @@
 .roboto-thin-italic-text {
   font-family: $font__italic;
 }
+
+.read-more-link {
+  color: $color__brand-3;
+  text-decoration: underline;
+
+  &:hover {
+    color: $color__brand-1;
+  }
+}
 // img {
 //   object-fit: cover;
 //   font-family: "object-fit: cover";
