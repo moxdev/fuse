@@ -329,3 +329,8 @@ require get_template_directory() . '/inc/home-page-sections.php';
  */
 require get_template_directory() . '/inc/flexible-content-sections.php';
 
+/**
+ * About Page Sections.
+ */
+require get_template_directory() . '/inc/about-page-sections.php';
+
