@@ -11,6 +11,8 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+  <?php fuse_eng_seo_page_titles(); ?>
+
 	<div class="entry-content">
 		<?php
 		the_content();

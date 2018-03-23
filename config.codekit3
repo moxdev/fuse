@@ -68,6 +68,199 @@
 		"oF": 1,
 		"oS": 3
 		},
+	"\/fonts\/ChunkFive-Roman.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/ChunkFive-Roman.eot",
+		"oF": 0
+		},
+	"\/fonts\/ChunkFive-Roman.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/ChunkFive-Roman.otf",
+		"oF": 0
+		},
+	"\/fonts\/ChunkFive-Roman.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/ChunkFive-Roman.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/ChunkFive-Roman.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/ChunkFive-Roman.ttf",
+		"oF": 0
+		},
+	"\/fonts\/ChunkFive-Roman.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/ChunkFive-Roman.woff",
+		"oF": 0
+		},
+	"\/fonts\/Roboto-Black.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Roboto-Black.eot",
+		"oF": 0
+		},
+	"\/fonts\/Roboto-Black.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/Roboto-Black.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/Roboto-Black.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Roboto-Black.ttf",
+		"oF": 0
+		},
+	"\/fonts\/Roboto-Black.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Roboto-Black.woff",
+		"oF": 0
+		},
+	"\/fonts\/Roboto-Bold.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Roboto-Bold.eot",
+		"oF": 0
+		},
+	"\/fonts\/Roboto-Bold.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/Roboto-Bold.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/Roboto-Bold.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Roboto-Bold.ttf",
+		"oF": 0
+		},
+	"\/fonts\/Roboto-Bold.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Roboto-Bold.woff",
+		"oF": 0
+		},
+	"\/fonts\/Roboto-Light.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Roboto-Light.eot",
+		"oF": 0
+		},
+	"\/fonts\/Roboto-Light.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/Roboto-Light.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/Roboto-Light.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Roboto-Light.ttf",
+		"oF": 0
+		},
+	"\/fonts\/Roboto-Light.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Roboto-Light.woff",
+		"oF": 0
+		},
+	"\/fonts\/Roboto-Medium.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Roboto-Medium.eot",
+		"oF": 0
+		},
+	"\/fonts\/Roboto-Medium.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/Roboto-Medium.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/Roboto-Medium.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Roboto-Medium.ttf",
+		"oF": 0
+		},
+	"\/fonts\/Roboto-Medium.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Roboto-Medium.woff",
+		"oF": 0
+		},
+	"\/fonts\/Roboto-ThinItalic.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Roboto-ThinItalic.eot",
+		"oF": 0
+		},
+	"\/fonts\/Roboto-ThinItalic.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/Roboto-ThinItalic.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/Roboto-ThinItalic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Roboto-ThinItalic.ttf",
+		"oF": 0
+		},
+	"\/fonts\/Roboto-ThinItalic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Roboto-ThinItalic.woff",
+		"oF": 0
+		},
 	"\/footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -96,6 +289,16 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
+	"\/imgs\/menu-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/menu-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/inc\/custom-header-img.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -115,6 +318,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/inc\/customizer.php",
+		"oF": 0
+		},
+	"\/inc\/flexible-content-sections.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/flexible-content-sections.php",
 		"oF": 0
 		},
 	"\/inc\/home-page-sections.php": {
@@ -304,6 +514,13 @@
 		"oAP": "\/LICENSE",
 		"oF": 0
 		},
+	"\/page-flexible-content.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-flexible-content.php",
+		"oF": 0
+		},
 	"\/page.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -365,6 +582,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/sass\/.sass-cache\/0bd5770d9d1634bab07f1af4592698a28a4d27b9\/style.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_default-header.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_default-header.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_page-templates.scssc": {
@@ -540,6 +764,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/8e193848ffa182141bf6331d6f232865a26f0eaa\/_mixins-master.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/c33d7125a1120eb94cc388f15e32b5ab36e99bfb\/_colophon.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/c33d7125a1120eb94cc388f15e32b5ab36e99bfb\/_colophon.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/c36d5045b2deb3d0f99391768c4f76efcc218d85\/_comments.scssc": {
@@ -997,6 +1228,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/page-templates\/_default-header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/_default-header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-templates\/_page-default.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/_page-default.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/page-templates\/_page-templates.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1239,6 +1496,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/style.css.map",
+		"oF": 0
+		},
+	"\/template-parts\/content-front-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-front-page.php",
 		"oF": 0
 		},
 	"\/template-parts\/content-none.php": {

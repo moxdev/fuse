@@ -14,9 +14,18 @@
   position: relative;
 }
 
+#primary {
+  background-color: #fff;
+}
+
 .wrapper {
   @include section-padding;
   @include padding-left-right;
+  @include max-width($max-width);
+}
+
+.roboto-thin-italic-text {
+  font-family: $font__italic;
 }
 // img {
 //   object-fit: cover;

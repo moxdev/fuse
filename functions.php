@@ -184,7 +184,17 @@ function my_mce_before_init_insert_formats( $init_array ) {
         'title' => 'Button', // Title to show in dropdown
         'block' => 'button', // Element to add class to
         'classes' => 'btn' // CSS class to add
-      )
+      ),
+      array(
+        'title' => 'HR Line', // Title to show in dropdown
+        'block' => 'hr', // Element to add class to
+        'classes' => 'hr-wysiwig-divider' // CSS class to add
+      ),
+      array(
+        'title' => 'Thin Italic', // Title to show in dropdown
+        'inline' => 'span', // Element to add class to
+        'classes' => 'roboto-thin-italic-text' // CSS class to add
+      ),
     );
     $init_array['style_formats'] = json_encode( $style_formats );
     return $init_array;
@@ -308,4 +318,9 @@ require get_template_directory() . '/inc/custom-header-img.php';
  * Custom Header Image.
  */
 require get_template_directory() . '/inc/home-page-sections.php';
+
+/**
+ * Flexible Conent Sections.
+ */
+require get_template_directory() . '/inc/flexible-content-sections.php';
 

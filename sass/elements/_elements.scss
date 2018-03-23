@@ -19,6 +19,17 @@ hr {
 	margin:0;
 }
 
+.hr-wysiwig-divider {
+  background-color: $color__brand-3;
+  width: 50%;
+  margin: 3em 0;
+
+  @include respond-to(medium) {
+    width: 30%;
+
+  }
+}
+
 @import "lists";
 
 img {
@@ -27,7 +38,7 @@ img {
 }
 
 figure {
-	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+	margin: 0; /* Extra wide images within figure tags don't overflow the content area. */
 }
 
 @import "tables";

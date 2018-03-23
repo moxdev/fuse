@@ -76,6 +76,21 @@
 	display: block;
 }
 
+.menu-toggle {
+  background-color: transparent;
+  margin-left: auto;
+  background-image: url(/wp-content/themes/fuse_eng/imgs/menu-icon.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  border: none;
+  z-index: 99999;
+  text-indent: 200%;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;

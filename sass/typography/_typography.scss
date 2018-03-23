@@ -50,6 +50,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Roboto-ThinItalic';
+  src: url('fonts/Roboto-ThinItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Roboto-ThinItalic.woff') format('woff'),
+    url('fonts/Roboto-ThinItalic.ttf') format('truetype'),
+    url('fonts/Roboto-ThinItalic.svg#Roboto-ThinItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body,
 button,
 input,
