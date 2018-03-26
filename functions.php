@@ -120,6 +120,12 @@ function fuse_eng_scripts() {
     wp_enqueue_script('home-testimonial-carousel', get_template_directory_uri() . '/js/min/home-testimonial-carousel.min.js', array('flickity'), NULL, TRUE);
   }
 
+  if( is_page_template( 'page-partners.php' ) ) {
+    wp_enqueue_script('glightbox', get_template_directory_uri() . '/js/min/glightbox.min.js', NULL, NULL, TRUE);
+
+    wp_enqueue_script('partners-lightbox', get_template_directory_uri() . '/js/min/partners-lightbox.min.js', array('glightbox'), NULL, TRUE);
+  }
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -333,4 +339,9 @@ require get_template_directory() . '/inc/flexible-content-sections.php';
  * About Page Sections.
  */
 require get_template_directory() . '/inc/about-page-sections.php';
+
+/**
+ * Partners Page Sections.
+ */
+require get_template_directory() . '/inc/partners-page-sections.php';
 

@@ -368,6 +368,13 @@
 		"oAP": "\/inc\/jetpack.php",
 		"oF": 0
 		},
+	"\/inc\/partners-page-sections.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/partners-page-sections.php",
+		"oF": 0
+		},
 	"\/inc\/template-functions.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -416,6 +423,16 @@
 		"oA": 1,
 		"oAP": "\/js\/min\/flickity.min-min.js",
 		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/min\/glightbox.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/glightbox.min-min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
@@ -470,6 +487,23 @@
 		"oAP": "\/js\/min\/ofi.min.js.map",
 		"oF": 0
 		},
+	"\/js\/min\/partners-lightbox.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/partners-lightbox.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/min\/partners-lightbox.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/js\/min\/partners-lightbox.min.js.map",
+		"oF": 0
+		},
 	"\/js\/navigation.js": {
 		"ft": 64,
 		"ma": 1,
@@ -489,6 +523,16 @@
 		"oF": 2,
 		"sC": 3,
 		"tS": 1
+		},
+	"\/js\/partners-lightbox.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/partners-lightbox.min.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/js\/skip-link-focus-fix.js": {
 		"ft": 64,
@@ -553,6 +597,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/page-flexible-content.php",
+		"oF": 0
+		},
+	"\/page-partners.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-partners.php",
 		"oF": 0
 		},
 	"\/page-services-child.php": {
