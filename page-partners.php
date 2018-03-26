@@ -27,10 +27,12 @@ get_header();
         endwhile; // End of the loop.
         ?>
       </div>
-		</main><!-- #main -->
+    </main><!-- #main -->
+
+    <?php if( function_exists( 'fuse_eng_partners_page_sections' ) ) : fuse_eng_partners_page_sections(); endif; ?>
+
   </div><!-- #primary -->
 
-  <?php if( function_exists( 'fuse_eng_partners_page_sections' ) ) : fuse_eng_partners_page_sections(); endif; ?>
 
 <?php
 // get_sidebar();

@@ -7,26 +7,39 @@
 
 function fuse_eng_partners_page_sections() {
 	if ( function_exists( 'get_field' ) ) {
+    if( have_rows('partners_logo_section') ): ?>
 
-    $images = get_field('partners_gallery_images');
+      <section class="partners">
+        <div class="wrapper">
 
-    if( $images ): ?>
-      <section class="section pair">
-        <div class="wrap">
-          <ul class="box-container three-cols">
-            <?php foreach( $images as $image ): ?>
-              <li class="box">
-                <a href="<?php echo $image['url']; ?>" class="glightbox">
-                  <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                  <div class="glightbox-desc">
-                      <p><?php echo $image['caption']; ?></p>
-                  </div>
-                </a>
-              </li>
-            <?php endforeach; ?>
+          <ul class="box-container">
+
+          <?php while( have_rows('partners_logo_section') ): the_row();
+
+            $lightbox_img        = get_sub_field('lightbox_img');
+            $thumb_img           = get_sub_field('thumbnail_img');
+            $partner_description = get_sub_field('partner_description');
+
+            ?>
+
+            <li class="box">
+
+              <a href="<?php echo $lightbox_img['url']; ?>" class="glightbox">
+                <img src="<?php echo $thumb_img['url']; ?>" alt="<?php echo $thumb_img['alt']; ?>" />
+                <div class="glightbox-desc">
+                    <p><?php echo wp_kses_post( $partner_description ); ?></p>
+                </div>
+              </a>
+
+            </li>
+
+          <?php endwhile; ?>
+
           </ul>
+
         </div>
       </section>
+
     <?php endif;
 	}
 }
