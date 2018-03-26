@@ -1,5 +1,6 @@
 var lightboxDescription = GLightbox({
-  selector: 'glightbox'
+  selector: 'glightbox',
+  descPosition: 'bottom'
 });
 
 
