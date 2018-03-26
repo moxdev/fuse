@@ -299,6 +299,26 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/imgs\/spaceship-bkground-lg.jpg": {
+		"ft": 16384,
+		"iS": 182067,
+		"oA": 0,
+		"oAP": "\/imgs\/spaceship-bkground-lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/spaceship-bkground.jpg": {
+		"ft": 16384,
+		"iS": 147186,
+		"oA": 0,
+		"oAP": "\/imgs\/spaceship-bkground.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/inc\/about-page-sections.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -603,6 +623,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/sass\/.sass-cache\/0bd5770d9d1634bab07f1af4592698a28a4d27b9\/style.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_about.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_about.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_default-header.scssc": {
