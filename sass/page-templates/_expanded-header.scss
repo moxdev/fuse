@@ -1,4 +1,4 @@
-.default-header {
+.expanded-header {
   position: relative;
   z-index: -1;
   width: 100%;
@@ -30,7 +30,7 @@
     position: absolute;
     width: 100%;
     z-index: 1000;
-    top: 70%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -39,9 +39,11 @@
     padding-left: 10px;
     padding-right: 10px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    text-align: center;
 
     .inner-wrapper {
       position: relative;
+      z-index: 100;
     }
 
     .header-title {
@@ -52,12 +54,22 @@
       letter-spacing: 1px;
     }
 
+    .header-sub-title {
+      position: relative;
+      z-index: 100;
+      font-family: $font__medium;
+    }
+
     .blue-bolt {
       position: absolute;
       z-index: -1;
-      top: -10px;
-      left: 0;
+      top: 33px;
       right: 0;
+      left: 0;
+    }
+
+    h1.entry-title {
+      margin-bottom: .25em;
     }
   }
 }

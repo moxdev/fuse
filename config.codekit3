@@ -697,6 +697,13 @@
 		"oAP": "\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_default-header.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_expanded-header.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_expanded-header.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_page-default.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -1397,6 +1404,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/page-templates\/_default-header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-templates\/_expanded-header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/_expanded-header.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

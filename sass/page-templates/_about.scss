@@ -1,5 +1,18 @@
 .page-template-page-about {
 
+  #primary {
+    color: $color__background-alt;
+    color: $color__brand-4;
+
+    .wrapper {
+      // padding-top: 0;
+    }
+
+    .entry-content {
+      margin: 0;
+    }
+  }
+
   .about-top-place-to-work {
     position: relative;
     z-index: 10;
