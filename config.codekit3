@@ -299,6 +299,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/imgs\/saucer.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/saucer.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/imgs\/spaceship-bkground-lg.jpg": {
 		"ft": 16384,
 		"iS": 182067,
@@ -949,6 +959,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/782e66eba03fd2da283e7fbff7f53d9702dbbffa\/_navigation.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/81c161cb0c6a6d53ae8455cca02a9509c8709d51\/_news.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/81c161cb0c6a6d53ae8455cca02a9509c8709d51\/_news.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/8e193848ffa182141bf6331d6f232865a26f0eaa\/_mixins-master.scssc": {
