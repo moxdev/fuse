@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Flexible Content
+ * Template Name: Our Team Page
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -12,12 +12,14 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+      <div class="wrapper">
 
-      <?php if( function_exists( 'fuse_eng_flexble_content_section' ) ) : fuse_eng_flexble_content_section(); endif; ?>
+        <?php if( function_exists( 'fuse_eng_our_team_page_sections' ) ) : fuse_eng_our_team_page_sections(); endif; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+      </div>
+    </main><!-- #main -->
 
+  </div><!-- #primary -->
 
 <?php
 

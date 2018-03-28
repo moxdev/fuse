@@ -368,6 +368,13 @@
 		"oAP": "\/inc\/jetpack.php",
 		"oF": 0
 		},
+	"\/inc\/our-team-page-sections.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/our-team-page-sections.php",
+		"oF": 0
+		},
 	"\/inc\/partners-page-sections-copy.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -403,6 +410,16 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
+	"\/js\/click-to-display-content.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/click-to-display-content.min.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/js\/customizer.js": {
 		"ft": 64,
 		"ma": 0,
@@ -423,6 +440,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/min\/click-to-display-content.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/click-to-display-content.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/js\/min\/flickity.min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -430,6 +457,16 @@
 		"oA": 1,
 		"oAP": "\/js\/min\/flickity.min-min.js",
 		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/min\/glightbox.min-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/glightbox.min-min-min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
@@ -606,6 +643,13 @@
 		"oAP": "\/page-flexible-content.php",
 		"oF": 0
 		},
+	"\/page-our-team.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-our-team.php",
+		"oF": 0
+		},
 	"\/page-partners.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -702,6 +746,20 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_expanded-header.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_flexible-content.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_flexible-content.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_our-team.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_our-team.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/11199adcdd137bf5e6ddd0813fa6db12541f069b\/_page-default.scssc": {
@@ -1382,6 +1440,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/news\/_news.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/news\/_news.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/page-templates\/_about.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1417,6 +1488,32 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/page-templates\/_expanded-header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-templates\/_flexible-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/_flexible-content.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-templates\/_our-team.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/_our-team.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

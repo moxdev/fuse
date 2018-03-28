@@ -1,0 +1,132 @@
+.blog, .single, .archive, .categories, .tag {
+
+  #content {
+    @include max-width($max_width);
+    background-color: #fff;
+
+    a {
+      text-decoration: none;
+      font-family: $font__bold;
+    }
+
+    article {
+      margin: 1em 0;
+    }
+  }
+
+  #secondary {
+    @include section-padding;
+  }
+
+  h1.entry-title {
+    // @extend h2;
+    // color: $color__brand-2;
+  }
+
+  h2.entry-title {
+    margin-bottom: .5em;
+
+    a {
+      color: $color__brand-2;
+    }
+  }
+
+  .entry-meta {
+    margin-bottom: 1em;
+  }
+
+  .entry-content {
+    .more-link {
+      color: $color__brand-1;
+
+      &:hover {
+        color: $color__link-hover;
+      }
+    }
+  }
+
+  .entry-meta {
+    a {
+      color: $color__brand-1;
+
+      &:hover {
+        color: $color__link-hover;
+      }
+    }
+    span {
+      display: block;
+    }
+  }
+
+  .pagination {
+    .page-numbers {
+      display: inline-block;
+      padding: 5px 10px;
+      margin: 0 2px 0 0;
+      border: 1px solid #eee;
+      line-height: 1;
+      text-decoration: none;
+      border-radius: 2px;
+      font-family: $font__bold;
+      color: $color__brand-2;
+    }
+    .page-numbers.current,
+    a.page-numbers:hover {
+      background: #f9f9f9;
+      color: $color__brand-1;
+    }
+  }
+
+  .single-navigation {
+    display: block;
+
+    > div {
+      margin-bottom: 1em;
+    }
+  }
+
+  @include respond-to(small) {
+    .single-navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .nav-previous {
+        text-align: left;
+        padding-right: 1em;
+      }
+
+      .nav-next {
+        text-align: right;
+        padding-left : 1em;
+      }
+    }
+
+  }
+
+  @include respond-to(medium) {
+    #content {
+      display: flex;
+
+      #primary {
+        flex: 0 0 70%;
+        order: 2;
+        padding-left: 5em;
+        padding-top: 1.8em;
+      }
+
+      #secondary {
+        flex: 0 0 30%;
+        order: 1;
+      }
+    }
+  }
+
+  @include respond-to(large) {
+    #content {
+      #primary {
+        padding-left: 7em;
+      }
+    }
+  }
+}

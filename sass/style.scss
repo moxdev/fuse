@@ -46,6 +46,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   ## Galleries
 # Front Page
 # Page Templates
+# Blog Page (News)
+# Footer
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
@@ -134,6 +136,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Page Templates
 --------------------------------------------------------------*/
 @import "page-templates/page-templates";
+
+/*--------------------------------------------------------------
+# Blog Page (News)
+--------------------------------------------------------------*/
+@import "news/news";
 
 /*--------------------------------------------------------------
 # Footer

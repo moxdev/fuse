@@ -173,3 +173,32 @@ if (! function_exists( 'fuse_eng_seo_page_titles' ) ) :
     }
   }
 endif;
+
+if (! function_exists( 'fuse_eng_seo_blog_page_title' ) ) :
+  function fuse_eng_seo_blog_page_title() {
+    if(function_exists('get_field')) {
+      $onPageTitle = get_field('on_page_title', get_option('page_for_posts'));
+
+      if($onPageTitle) { ?>
+        <header class="entry-header">
+          <h1 class="entry-title">
+            <?php echo wp_kses(
+              $onPageTitle,
+              array(
+                'span' => array(),
+                'em' => array(),
+                'strong' => array()
+              )
+            ); ?>
+          </h1>
+        </header><!-- .entry-header -->
+      <?php } else {
+        $news_page_title  = get_the_title( get_option('page_for_posts', true) ); ?>
+
+        <header class="entry-header">
+          <h1><?php echo $news_page_title; ?></h1>
+        </header><!-- .entry-header -->
+      <?php }
+    }
+  }
+endif;

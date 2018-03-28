@@ -26,7 +26,7 @@ function fuse_eng_flexble_content_section() {
 
         elseif( get_row_layout() == 'white_section' ):
 
-          $white_section_content = get_sub_field('white_section_content'); ?>
+          $white_section_content = get_sub_field('white_content_section'); ?>
 
             <section class="white-section">
               <div class="wrapper">

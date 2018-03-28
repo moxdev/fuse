@@ -43,6 +43,7 @@ if ( ! function_exists( 'fuse_eng_setup' ) ) :
     add_theme_support( 'post-thumbnails' );
     add_image_size('home-feature', 1800, 800, false);
     add_image_size('feature-img', 1800, 600, false);
+    add_image_size('team-bio-img', 300, 300, true);
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
@@ -126,6 +127,10 @@ function fuse_eng_scripts() {
     wp_enqueue_script('partners-lightbox', get_template_directory_uri() . '/js/min/partners-lightbox.min.js', array('glightbox'), NULL, TRUE);
   }
 
+  if( is_page_template( 'page-our-team.php' ) ) {
+    wp_enqueue_script('read-more-dropdown', get_template_directory_uri() . '/js/min/click-to-display-content.min.js', NULL, NULL, TRUE);
+  }
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -205,6 +210,11 @@ function my_mce_before_init_insert_formats( $init_array ) {
         'title' => 'Read More Link', // Title to show in dropdown
         'inline' => 'span', // Element to add class to
         'classes' => 'read-more-link' // CSS class to add
+      ),
+      array(
+        'title' => 'Flex Wrapper div', // Title to show in dropdown
+        'block' => 'div', // Element to add class to
+        'classes' => 'wysiwig-flex-wrapper' // CSS class to add
       )
     );
     $init_array['style_formats'] = json_encode( $style_formats );
@@ -344,4 +354,9 @@ require get_template_directory() . '/inc/about-page-sections.php';
  * Partners Page Sections.
  */
 require get_template_directory() . '/inc/partners-page-sections.php';
+
+/**
+ * Our Team Page Sections.
+ */
+require get_template_directory() . '/inc/our-team-page-sections.php';
 
