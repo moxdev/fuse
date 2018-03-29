@@ -1,5 +1,4 @@
 #colophon {
-  padding-bottom: 2em;
   @include padding-left-right;
   background-color: $color__background-body;
   font-family: $font__bold;
@@ -7,6 +6,14 @@
 
   .site-info {
     text-align: center;
+    padding-bottom: 2em;
+
+    .wrapper {
+      padding-top: 1em;
+      padding-bottom: 0;
+      @include max-width(1100px);
+      // @include test(red);
+    }
 
     a {
       color: $color__brand-4;
@@ -86,14 +93,37 @@
       font-family: $font__light;
     }
 
-    @include respond-to(medium) {
+    @include respond-to(small) {
+      .logo {
+        margin-bottom: 1rem;
+      }
+
       .ftr-flex-wrapper {
         display: flex;
-        justify-content: space-between
+        justify-content: space-between;
+        align-items: baseline;
       }
 
       .ftr-flex-child {
         flex: 1 1 33%;
+      }
+
+      #footer-menu {
+        display: flex;
+        // justify-content: center;
+        li {
+          margin-right: 2em;
+        }
+      }
+
+      .divider {
+        width: 500px;
+      }
+
+      .copyright {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
 
     }

@@ -38,7 +38,7 @@
   .content-wrapper {
     background-image: url(/wp-content/themes/fuse_eng/imgs/left-spaceship.svg), url(/wp-content/themes/fuse_eng/imgs/right-spaceship.svg);
     background-repeat: no-repeat;
-    background-position: top center, bottom, center;
+    background-position: top, bottom, center;
     background-size: 125px;
     padding: 8em 0;
     max-width: 800px;
@@ -67,10 +67,7 @@
 
   @include respond-to(medium) {
     .content-wrapper {
-      background-image: url(/wp-content/themes/fuse_eng/imgs/left-spaceship.svg), url(/wp-content/themes/fuse_eng/imgs/right-spaceship.svg);
-      background-repeat: no-repeat;
-      background-position: 0px center, 643px, center;
-      // background-position: 170px center, 790px, center;
+      background-position: 0px, 643px, center;
       background-size: 150px;
       padding: 0;
     }

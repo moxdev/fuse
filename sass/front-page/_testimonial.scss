@@ -3,7 +3,19 @@
   color: #fff;
   text-align: center;
   position: relative;
-  // @include font-smooth;
+
+
+  .wrapper {
+    background: url(/wp-content/themes/fuse_eng/imgs/robot-standing.svg) left bottom no-repeat, url(/wp-content/themes/fuse_eng/imgs/robot-rolling.svg) right bottom no-repeat;
+    background-size: 70px;
+    max-width: 1350px;
+    margin: 0 auto;
+
+  }
+
+  .inner-wrapper {
+    @include max-width(500px);
+  }
 
   h2 {
     color: $color__brand-3;
@@ -88,77 +100,35 @@
     }
   }
 
-  // @include respond-to(medium) {
-  //   .home-testimonial-wrapper {
-  //     padding-top: 9em;
-  //     padding-bottom: 3em;
-  //   }
-  //   .cell-wrapper {
-  //     display: flex;
-  //     justify-content: space-between;
+  @include respond-to(mobile) {
+    .wrapper {
+      background-size: 80px;
+    }
+  }
 
-  //     p {
-  //       margin-bottom: 0;
-  //     }
-  //   }
+  @include respond-to(x-small) {
+    .wrapper {
+      background-size: 100px;
+    }
+  }
 
-  //   .testimonial-carousel {
-  //     .cell {
-  //       // width: 85%;
-  //       // margin-left: 10%;
+  @include respond-to(small) {
+    .wrapper {
+      background-size: 150px;
+    }
+  }
+  @include respond-to(medium) {
+    .inner-wrapper {
+      max-width: 700px;
+    }
+  }
+  @include respond-to(large) {
+    .wrapper {
+      background-size: 175px;
+    }
 
-  //     }
-
-  //     .flickity-prev-next-button {
-  //       width: 50px;
-  //       height: 50px;
-  //     }
-  //   }
-
-  //   .excerpt-wrapper {
-  //     flex: 1;
-  //     padding-right: 2em;
-  //   }
-
-  //   .testimonial-content-wrapper {
-  //     flex: 1;
-  //     padding-top: 1.5em;
-  //   }
-
-  //   a.btn {
-  //     margin-top: 1em;
-  //     margin-right: 22%;
-  //   }
-  // }
-
-  // @include respond-to(large) {
-  //   .home-testimonial-wrapper {
-  //     max-width: 1300px;
-
-  //     a.btn {
-  //       margin-right: 28%;
-  //     }
-  //   }
-  //   .testimonial-carousel {
-  //     padding-left: 8em;
-  //     padding-right: 8em;
-  //     .cell {
-  //       .excerpt {
-  //         padding-right: 1em;
-  //       }
-  //     }
-  //   }
-  // }
-  // @include respond-to(x-large) {
-  //   .home-testimonial-wrapper {
-  //     padding-top: 14em;
-  //   }
-  // }
-  // @include respond-to(xx-large) {
-  //   .home-testimonial-wrapper {
-  //     a.btn {
-  //       margin-right: 25%;
-  //     }
-  //   }
-  // }
+    .inner-wrapper {
+      max-width: 900px;
+    }
+  }
 }
