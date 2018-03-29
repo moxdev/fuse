@@ -14,17 +14,27 @@ function fuse_eng_home_page_sections() {
         $testimonial_section        = get_sub_field( 'testimonial_section' );
         $learn_more_video_section   = get_sub_field( 'learn_more_video_section' );
 
-        if ( $top_places_to_work_section ) : ?>
+        if ( $top_places_to_work_section ) :
 
-        <section class="home-top-place-to-work">
-          <div class="wrapper">
-            <div class="content-wrapper">
-              <?php echo wp_kses_post( $top_places_to_work_section ); ?>
-            </div>
-          </div><!-- wrapper -->
-        </section><!-- home-top-place-to-work -->
+          while( have_rows('top_places_to_work_section') ): the_row();
+            $tpw_bkg_image = get_sub_field('home_top_place_to_work_background_image');
+            $tpw_content   = get_sub_field('home_top_place_to_work_content'); ?>
 
-        <?php endif;
+            <section class="home-top-place-to-work">
+              <figure class="bkg-image">
+                <img src="<?php echo esc_url( $tpw_bkg_image['url'] ); ?>" alt="<?php echo esc_attr( $tpw_bkg_image['alt'] ); ?>" description="<?php echo esc_attr( $tpw_bkg_image['description'] ); ?>">
+              </figure>
+
+              <div class="wrapper">
+                <div class="content-wrapper">
+                  <?php echo wp_kses_post( $tpw_content ); ?>
+                </div>
+              </div><!-- wrapper -->
+            </section><!-- home-top-place-to-work -->
+
+          <?php endwhile;
+
+        endif;
 
         if ( $testimonial_section ) :
 

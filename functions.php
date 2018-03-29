@@ -360,3 +360,13 @@ require get_template_directory() . '/inc/partners-page-sections.php';
  */
 require get_template_directory() . '/inc/our-team-page-sections.php';
 
+/**
+ * Contact Page Form.
+ */
+include_once( get_stylesheet_directory() . '/plugins/mm4-you-contact-form/mm4-you-cf.php' );
+
+/**
+* Contact Page Sidebar.
+*/
+require get_template_directory() . '/inc/contact-page-sidebar.php';
+

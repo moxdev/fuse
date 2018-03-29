@@ -1,0 +1,176 @@
+.page-template-page-contact {
+
+  #contact-form {
+    font-family: $font__bold;
+    max-width: 600px;
+    margin-top: 1em;
+
+    label,
+    input[type="tel"],
+    input[type="text"],
+    input[type="email"] {
+      display: block;
+      width: 100%;
+    }
+
+    label {
+      color: $color__brand-2;
+      font-size: 1.125em;
+    }
+
+    input, textarea {
+      border: 1px solid $color__brand-4;
+      border-radius: 8px;
+      margin: .5em 0 1em;
+      padding: 10px 0 10px 20px;
+    }
+
+    input[type="submit"] {
+      display: block;
+      @extend .btn;
+
+    }
+
+    .g-recaptcha {
+      padding: 1em 0;
+      overflow: hidden;
+    }
+
+    .msg-box.error {
+      padding-bottom: 1em;
+
+      span {
+        display: block;
+      }
+
+      strong {
+        color: red;
+      }
+    }
+  }
+
+  aside {
+    @include section-padding;
+    // font-family: $font__regular;
+
+    h2 {
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+
+  aside > div {
+    padding-bottom: 1em;
+  }
+
+  #address {
+    h2 {
+      font-family: $font__bold;
+      color: $color__brand-3;
+      text-transform: none;
+      font-size: 1.2em;
+    }
+    .side-address {
+      display: block;
+    }
+  }
+
+  #phone-fax {
+    padding-top: 1em;
+    span {
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  #directions {
+
+    .side-address {
+      display: block;
+    }
+
+    #map-canvas {
+      height: 300px;
+      margin: 1em 0;
+    }
+
+    #response-panel {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+
+    #get-directions {
+      display: none;
+    }
+
+    .directions-submit-button {
+      color: #fff;
+      width: 50%;
+      text-transform: uppercase;
+      padding: 10px;
+    }
+  }
+
+  @include respond-to(medium) {
+    .wrapper {
+      display: flex;
+
+      #main {
+        flex: 0 0 60%;
+        order: 1;
+        padding-right: 2em;
+        padding-top: 1.8em;
+      }
+
+      #secondary {
+        flex: 0 0 40%;
+        order: 2;
+      }
+
+      .sidebar-wrapper {
+
+        padding-left: 3em;
+      }
+    }
+  }
+
+  // @include respond-to(medium) {
+  //   #page {
+
+  //     .page-flex-wrapper {
+
+  //       display: flex;
+  //       padding-bottom: 2em;
+  //     }
+  //     #primary {
+  //       flex: 1 1 50%;
+  //     }
+  //     #secondary {
+  //       flex: 1 1 30%;
+  //     }
+  //   }
+
+  //   form {
+  //     .submit-button {
+  //       max-width: 30%;
+  //       font-size: 1em;
+  //     }
+  //   }
+
+  //   #directions {
+  //     .directions-submit-button {
+  //       max-width: 40%;
+  //     }
+
+  //   }
+  // }
+
+
+}
