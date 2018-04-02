@@ -47,10 +47,10 @@ if ( ! function_exists( 'fuse_eng_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-      'left-main-menu'    => esc_html__( ' Left Main Menu', 'fuse_eng' ),
-      'right-main-menu'    => esc_html__( 'Right Main Menu', 'fuse_eng' ),
-      'mobile-menu'    => esc_html__( 'Mobile Menu', 'fuse_eng' ),
-      'footer-menu'  => esc_html__( 'Footer Menu', 'fuse_eng' )
+      'left-main-menu'  => esc_html__( ' Left Main Menu', 'fuse_eng' ),
+      'right-main-menu' => esc_html__( 'Right Main Menu', 'fuse_eng' ),
+      'mobile-menu'     => esc_html__( 'Mobile Menu', 'fuse_eng' ),
+      'footer-menu'     => esc_html__( 'Footer Menu', 'fuse_eng' )
 		) );
 
 		/*
@@ -111,7 +111,7 @@ add_action( 'widgets_init', 'fuse_eng_widgets_init' );
 function fuse_eng_scripts() {
 	wp_enqueue_style( 'fuse_eng-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'fuse_eng-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'fuse_eng-navigation', get_template_directory_uri() . '/js/min/navigation.min.js', array(), '20151215', true );
 
   wp_enqueue_script( 'fuse_eng-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -177,6 +177,17 @@ if(!function_exists('custom_add_allowed_tags')) {
     return $tags;
   }
   add_filter('wp_kses_allowed_html', 'custom_add_allowed_tags');
+}
+
+/**
+ * Add plus icons into registered "mobile-menu" if menu has childrem items
+ */
+add_filter( 'walker_nav_menu_start_el', 'wpse_add_menu_icon', 10, 4);
+function wpse_add_menu_icon( $item_output, $item, $depth, $args ){
+  if( 'mobile-menu' == $args->theme_location && $depth == 0 && in_array('menu-item-has-children', $item->classes ) ) {
+    $item_output .='<span class="icon-plus">&#43;</span>';
+  }
+  return $item_output;
 }
 
 /**

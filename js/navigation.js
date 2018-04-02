@@ -1,106 +1,50 @@
 /**
  * File navigation.js.
  *
- * Handles toggling the navigation menu for small screens and enables TAB key
- * navigation support for dropdown menus.
  */
-( function() {
-	var container, button, menu, links, i, len;
+const btn = document.getElementById('menu-toggle');
+const pane = document.getElementById('mobile-menu');
+const activeClass = 'open';
 
-	container = document.getElementById( 'site-navigation' );
-	if ( ! container ) {
-		return;
-	}
+btn.addEventListener('click', function () {
+  if (this.classList.contains(activeClass)) {
+    this.setAttribute('aria-expanded', 'false');
+    this.classList.remove(activeClass);
 
-	button = container.getElementsByTagName( 'button' )[0];
-	if ( 'undefined' === typeof button ) {
-		return;
-	}
+    pane.setAttribute('aria-expanded', 'false');
+    pane.classList.remove(activeClass);
 
-	menu = container.getElementsByTagName( 'ul' )[0];
+    document.getElementsByTagName('body')[0].classList.remove(activeClass);
+  } else {
+    this.setAttribute('aria-expanded', 'true');
+    this.classList.add(activeClass);
 
-	// Hide menu toggle button if menu is empty and return early.
-	if ( 'undefined' === typeof menu ) {
-		button.style.display = 'none';
-		return;
-	}
+    pane.setAttribute('aria-expanded', 'true');
+    pane.classList.add(activeClass);
 
-	menu.setAttribute( 'aria-expanded', 'false' );
-	if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
-		menu.className += ' nav-menu';
-	}
+    document.getElementsByTagName('body')[0].classList.add(activeClass);
+  }
+});
 
-	button.onclick = function() {
-		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
-			container.className = container.className.replace( ' toggled', '' );
-			button.setAttribute( 'aria-expanded', 'false' );
-			menu.setAttribute( 'aria-expanded', 'false' );
-		} else {
-			container.className += ' toggled';
-			button.setAttribute( 'aria-expanded', 'true' );
-			menu.setAttribute( 'aria-expanded', 'true' );
-		}
-	};
+const icons = Array.prototype.slice.call(
+  document.querySelectorAll('#mobile-main-menu .icon-plus')
+);
 
-	// Get all the link elements within the menu.
-	links    = menu.getElementsByTagName( 'a' );
-
-	// Each time a menu link is focused or blurred, toggle focus.
-	for ( i = 0, len = links.length; i < len; i++ ) {
-		links[i].addEventListener( 'focus', toggleFocus, true );
-		links[i].addEventListener( 'blur', toggleFocus, true );
-	}
-
-	/**
-	 * Sets or removes .focus class on an element.
-	 */
-	function toggleFocus() {
-		var self = this;
-
-		// Move up through the ancestors of the current link until we hit .nav-menu.
-		while ( -1 === self.className.indexOf( 'nav-menu' ) ) {
-
-			// On li elements toggle the class .focus.
-			if ( 'li' === self.tagName.toLowerCase() ) {
-				if ( -1 !== self.className.indexOf( 'focus' ) ) {
-					self.className = self.className.replace( ' focus', '' );
-				} else {
-					self.className += ' focus';
-				}
-			}
-
-			self = self.parentElement;
-		}
-	}
-
-	/**
-	 * Toggles `focus` class to allow submenu access on tablets.
-	 */
-	( function( container ) {
-		var touchStartFn, i,
-			parentLink = container.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
-
-		if ( 'ontouchstart' in window ) {
-			touchStartFn = function( e ) {
-				var menuItem = this.parentNode, i;
-
-				if ( ! menuItem.classList.contains( 'focus' ) ) {
-					e.preventDefault();
-					for ( i = 0; i < menuItem.parentNode.children.length; ++i ) {
-						if ( menuItem === menuItem.parentNode.children[i] ) {
-							continue;
-						}
-						menuItem.parentNode.children[i].classList.remove( 'focus' );
-					}
-					menuItem.classList.add( 'focus' );
-				} else {
-					menuItem.classList.remove( 'focus' );
-				}
-			};
-
-			for ( i = 0; i < parentLink.length; ++i ) {
-				parentLink[i].addEventListener( 'touchstart', touchStartFn, false );
-			}
-		}
-	}( container ) );
-} )();
+icons.map(item => {
+  item.addEventListener('click', function () {
+    item.classList.toggle('active');
+    if (item.nextElementSibling.classList.contains('active')) {
+      item.nextElementSibling.style.maxHeight = 0;
+      setTimeout(
+        function () {
+          item.nextElementSibling.classList.remove('active');
+        },
+        750
+      );
+    } else {
+      item.nextElementSibling.classList.add('active');
+      item.nextElementSibling.style.maxHeight = item.nextElementSibling.scrollHeight +
+        'px';
+    }
+  });
+});

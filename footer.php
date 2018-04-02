@@ -142,6 +142,19 @@
       </div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
+
+  <nav id="mobile-navigation">
+
+    <?php
+      wp_nav_menu( array(
+        'theme_location' => 'mobile-menu',
+        'menu_id' => 'mobile-menu',
+        'container' => '',
+      ) );
+    ?>
+
+  </nav>
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

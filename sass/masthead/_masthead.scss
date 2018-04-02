@@ -1,7 +1,4 @@
 #masthead {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: absolute;
   top: 0;
   right: 0;
@@ -12,6 +9,86 @@
   padding-left:10px;
   padding-right:10px;
   border-bottom: 1px solid #fff;
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+  }
+
+  #menu-toggle {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .nav-button-wrapper {
+
+    svg {
+      width: 60px;
+    }
+
+    #nav-icon {
+      width: 40px;
+      margin: 0 auto;
+      position: relative;
+      transform: rotate(0deg);
+      transition: .5s ease-in-out;
+      cursor: pointer;
+
+      span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 70%;
+        background: #fff;
+        opacity: 1;
+        left: 15%;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+      }
+
+      span:nth-child(1) {
+        top: -45px;
+      }
+
+      span:nth-child(2),span:nth-child(3) {
+        top: -34px;
+      }
+
+      span:nth-child(3) {
+        background: $color__brand-1;
+      }
+
+      span:nth-child(4) {
+        top: -22px;
+      }
+    }
+  }
+
+  #menu-toggle.open {
+    #nav-icon span:nth-child(1) {
+      top: 18px;
+      width: 0%;
+      left: 50%;
+    }
+
+    #nav-icon span:nth-child(2) {
+      transform: rotate(45deg);
+      background: $color__brand-1;
+    }
+
+    #nav-icon span:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+
+    #nav-icon span:nth-child(4) {
+      top: 18px;
+      width: 0%;
+      left: 50%;
+    }
+  }
 
   @include respond-to(mobile) {
     @include padding-left-right;
