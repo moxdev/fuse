@@ -26,6 +26,10 @@
     svg {
       width: 125px;
       height: 63px;
+
+      .a {
+        fill: #fff !important;
+      }
     }
   }
 
@@ -42,6 +46,10 @@
 
     svg {
       width: 50px;
+
+      .a {
+        fill: #fff !important;
+      }
     }
 
     #nav-icon {
