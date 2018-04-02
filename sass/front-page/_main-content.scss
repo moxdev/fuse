@@ -1,17 +1,16 @@
 #primary {
   @include padding-left-right;
   @include section-padding;
-
   text-align: center;
   background-color: $color__brand-2;
   color: #fff;
-  @include font-smooth;
 
   #main {
-    @include max-width(600px);
+    @include max-width(700px);
   }
 
   h1 {
     color: $color__brand-1;
+    @include font-smooth;
   }
 }

@@ -60,10 +60,10 @@
 }
 
 html {
-	@include font-size(0.8125);
+	@include font-size(0.9);
 
 	@include respond-to(small) {
-		@include font-size(0.9375);
+		@include font-size(1);
 	}
 
 	@include respond-to(large) {
