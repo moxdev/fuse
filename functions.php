@@ -41,7 +41,7 @@ if ( ! function_exists( 'fuse_eng_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
     add_theme_support( 'post-thumbnails' );
-    add_image_size('home-feature', 1800, 800, false);
+    add_image_size('home-feature', 2000, 1000, false);
     add_image_size('feature-img', 1800, 600, false);
     add_image_size('team-bio-img', 300, 300, true);
 
