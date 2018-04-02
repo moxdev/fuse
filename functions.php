@@ -47,7 +47,9 @@ if ( ! function_exists( 'fuse_eng_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-      'main-menu'    => esc_html__( 'Main Menu', 'fuse_eng' ),
+      'left-main-menu'    => esc_html__( ' Left Main Menu', 'fuse_eng' ),
+      'right-main-menu'    => esc_html__( 'Right Main Menu', 'fuse_eng' ),
+      'mobile-menu'    => esc_html__( 'Mobile Menu', 'fuse_eng' ),
       'footer-menu'  => esc_html__( 'Footer Menu', 'fuse_eng' )
 		) );
 
