@@ -156,5 +156,26 @@ function fuse_eng_custom_header_section() {
       <?php
       }
     }
+  } else {
+    $feature_img = get_the_post_thumbnail( get_option( 'page_for_posts' ), 'feature-img' );
+    ?>
+      <section class="default-header">
+        <figure class="feature-img">
+
+          <?php echo $feature_img; ?>
+
+          <div class="title-wrapper">
+
+            <div class="inner-wrapper">
+
+              <span class="blue-bolt">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46.61" height="78.51" viewBox="0 0 46.61 78.51"><defs><style>.a{fill:#00bed5;fill-rule:evenodd;}</style></defs><title>lightening-bolt</title><polygon class="a" points="37.01 0 15.42 2.13 0 40.56 23.94 36.09 4.18 78.51 46.61 23.48 21.35 26.33 37.01 0"/></svg>
+              </span>
+            </div>
+
+          </div><!-- title-wrapper -->
+        </figure>
+      </section>
+    <?php
   }
 }
