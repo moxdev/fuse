@@ -116,12 +116,30 @@
     .wrapper {
       background-size: 150px;
     }
+
+    .divider {
+      width: 300px;
+
+      hr {
+        bottom: 40px;
+      }
+    }
+
   }
   @include respond-to(medium) {
     .inner-wrapper {
       max-width: 700px;
     }
+
+    .divider {
+      width: 400px;
+
+      hr {
+        bottom: 42px;
+      }
+    }
   }
+
   @include respond-to(large) {
     .wrapper {
       background-size: 175px;
@@ -129,6 +147,13 @@
 
     .inner-wrapper {
       max-width: 900px;
+    }
+
+    .divider {
+      width: 500px;
+      hr {
+        bottom: 47px;
+      }
     }
   }
 }

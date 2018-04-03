@@ -12,7 +12,6 @@
       padding-top: 1em;
       padding-bottom: 0;
       @include max-width(1100px);
-      // @include test(red);
     }
 
     a {
@@ -24,13 +23,6 @@
       list-style-type: none;
       margin: 0;
       padding: 0;
-
-      li {
-        a {
-          // display: block;
-          // padding: 0 1em;
-        }
-      }
     }
 
     .ftr-flex-child,
@@ -41,6 +33,12 @@
     .logo {
       svg {
         width: 120px;
+      }
+    }
+
+    #footer-menu {
+      li:last-child {
+        padding-right: 0;
       }
     }
 
@@ -91,6 +89,9 @@
 
     .copyright {
       font-family: $font__light;
+      a {
+        font-family: $font__light;
+      }
     }
 
     @include respond-to(small) {
@@ -110,9 +111,9 @@
 
       #footer-menu {
         display: flex;
-        // justify-content: center;
+
         li {
-          margin-right: 2em;
+          padding-right: 10px;
         }
       }
 
@@ -126,6 +127,41 @@
         align-items: center;
       }
 
+    }
+
+    @include respond-to(medium) {
+      #footer-menu {
+        li {
+          padding-right: 3em;
+        }
+      }
+
+      .social-media {
+
+        li {
+          padding-right: 2em;
+        }
+      }
+
+    }
+
+    @include respond-to(x-large) {
+      .wrapper {
+        max-width: 1500px;
+      }
+
+      #footer-menu {
+        li {
+          padding-right: 6em;
+        }
+      }
+
+      .social-media {
+
+        li {
+          padding-right: 2em;
+        }
+      }
     }
   }
 }

@@ -319,6 +319,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/imgs\/MMS_Logo_Black_Horizontal.png": {
+		"ft": 32768,
+		"iS": 362,
+		"oA": 0,
+		"oAP": "\/imgs\/MMS_Logo_Black_Horizontal.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/imgs\/right-spaceship.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1109,6 +1120,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/782e66eba03fd2da283e7fbff7f53d9702dbbffa\/_menus.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/782e66eba03fd2da283e7fbff7f53d9702dbbffa\/_mobile-menu.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/782e66eba03fd2da283e7fbff7f53d9702dbbffa\/_mobile-menu.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/782e66eba03fd2da283e7fbff7f53d9702dbbffa\/_navigation.scssc": {

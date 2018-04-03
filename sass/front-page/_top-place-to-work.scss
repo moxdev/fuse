@@ -53,6 +53,10 @@
         color: $color__link-hover;
       }
     }
+
+    h2 {
+      margin-bottom: 0;
+    }
   }
 
   .wysiwig-flex-wrapper {
@@ -63,8 +67,10 @@
   }
 
   @include respond-to(x-small) {
-    h2 {
-      margin-bottom: 1em;
+    .content-wrapper {
+      h2 {
+        margin-bottom: 1em;
+      }
     }
   }
 

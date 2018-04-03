@@ -138,7 +138,7 @@
       </div><!-- .wrapper -->
       <div class="copyright">
         <div class="fuse">&copy; 2018 Fuse Engineering</div>
-        <div class="mm4"><a href="https://www.mm4solutions.com/">Website by mm4</a></div>
+        <div class="mm4"><a href="https://www.mm4solutions.com/">Website by <img src="/wp-content/themes/fuse_eng/imgs/MMS_Logo_Black_Horizontal.png" alt="Millennium Marketing Solutions Logo"></a></div>
       </div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
