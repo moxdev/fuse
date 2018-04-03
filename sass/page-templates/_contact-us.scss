@@ -1,5 +1,12 @@
 .page-template-page-contact {
 
+  #content {
+    h2 {
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+  }
+
   #contact-form {
     font-family: $font__bold;
     max-width: 600px;
@@ -51,16 +58,10 @@
 
   aside {
     @include section-padding;
-    // font-family: $font__regular;
-
-    h2 {
-      text-transform: uppercase;
-      margin: 0;
-    }
   }
 
   aside > div {
-    padding-bottom: 1em;
+    // padding-bottom: 1em;
   }
 
   #address {
@@ -69,6 +70,7 @@
       color: $color__brand-3;
       text-transform: none;
       font-size: 1.2em;
+      margin: 0 0 .5em;
     }
     .side-address {
       display: block;
@@ -84,6 +86,7 @@
     a {
       text-decoration: none;
       color: inherit;
+      font-family: $font__light;
     }
   }
 
@@ -119,58 +122,28 @@
   }
 
   @include respond-to(medium) {
-    .wrapper {
-      display: flex;
+    #primary {
 
-      #main {
-        flex: 0 0 60%;
-        order: 1;
-        padding-right: 2em;
-        padding-top: 1.8em;
-      }
+      .wrapper {
+        display: flex;
 
-      #secondary {
-        flex: 0 0 40%;
-        order: 2;
-      }
+        #main {
+          flex: 0 0 60%;
+          order: 1;
+          padding-right: 2em;
+          padding-top: 1.8em;
+        }
 
-      .sidebar-wrapper {
+        #secondary {
+          flex: 0 0 40%;
+          order: 2;
+        }
 
-        padding-left: 3em;
+        .sidebar-wrapper {
+
+          padding-left: 3em;
+        }
       }
     }
   }
-
-  // @include respond-to(medium) {
-  //   #page {
-
-  //     .page-flex-wrapper {
-
-  //       display: flex;
-  //       padding-bottom: 2em;
-  //     }
-  //     #primary {
-  //       flex: 1 1 50%;
-  //     }
-  //     #secondary {
-  //       flex: 1 1 30%;
-  //     }
-  //   }
-
-  //   form {
-  //     .submit-button {
-  //       max-width: 30%;
-  //       font-size: 1em;
-  //     }
-  //   }
-
-  //   #directions {
-  //     .directions-submit-button {
-  //       max-width: 40%;
-  //     }
-
-  //   }
-  // }
-
-
 }

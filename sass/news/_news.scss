@@ -5,7 +5,6 @@
     background-color: #fff;
 
     a {
-      // text-decoration: none;
       cursor: pointer;
     }
 
@@ -35,11 +34,11 @@
 
     .social {
       max-width: 200px;
+
       h2 {
         color: $color__brand-3;
         font-family: $font__chunky;
         font-size: 1em;
-        @include font-smooth;
       }
 
       a {
@@ -52,19 +51,9 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
-
-        li {
-          a {
-            // display: block;
-            // padding: 0 1em;
-          }
-        }
       }
 
       .social-media {
-        // display: inline-flex;
-        // justify-content: space-between;
-
         li {
           padding-right: 10px;
 
@@ -172,46 +161,41 @@
   }
 
   @include respond-to(medium) {
-    .wrapper {
-      display: flex;
+    #primary {
+      .wrapper {
+        display: flex;
 
-      #main {
-        flex: 0 0 60%;
-        order: 1;
-        padding-right: 2em;
-        padding-top: 1.8em;
-      }
+        #main {
+          flex: 0 0 60%;
+          order: 1;
+          padding-right: 2em;
+          padding-top: 1.8em;
+        }
 
-      #secondary {
-        flex: 0 0 40%;
-        order: 2;
-      }
+        #secondary {
+          flex: 0 0 40%;
+          order: 2;
+        }
 
-      .sidebar-wrapper {
+        .sidebar-wrapper {
 
-        border-left: 2px solid $color__brand-3;
-        padding-left: 3em;
-      }
+          border-left: 2px solid $color__brand-3;
+          padding-left: 3em;
+        }
 
-      .widget-do-etfw {
+        .widget-do-etfw {
 
-        max-width: 300px;
+          max-width: 300px;
 
-        h2 {
-          color: $color__brand-3;
-          font-family: $font__medium;
-          font-size: 1em;
-          text-transform: uppercase;
+          h2 {
+            color: $color__brand-3;
+            font-family: $font__medium;
+            font-size: 1em;
+            text-transform: uppercase;
+          }
         }
       }
-    }
-  }
 
-  @include respond-to(large) {
-    .wrapper {
-      #secondary {
-        // padding-left: 7em;
-      }
     }
   }
 }

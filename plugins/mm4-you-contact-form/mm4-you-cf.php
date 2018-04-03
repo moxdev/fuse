@@ -134,7 +134,7 @@ function mm4_you_contact_form() {
 			<input type="text" name="last-name" id="last-name" class="required" data-error-label="Last Name" placeholder="* Last Name">
 		</label>
     <label for="primary-phone">
-      <input type="tel" name="primary-phone" id="primary-phone" class="required" data-error-label="Primary Phone" placeholder="* Phone">
+      <input type="tel" name="primary-phone" id="primary-phone" class="required" data-error-label="Primary Phone" placeholder="* Phone Number">
     </label>
 		<label for="email-address">
 			<input type="email" name="email-address" id="email-address" class="required" data-error-label="Email" placeholder="* Email Address">
