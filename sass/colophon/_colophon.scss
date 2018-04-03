@@ -137,12 +137,10 @@
       }
 
       .social-media {
-
         li {
           padding-right: 2em;
         }
       }
-
     }
 
     @include respond-to(x-large) {

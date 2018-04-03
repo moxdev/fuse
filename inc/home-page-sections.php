@@ -119,16 +119,15 @@ function fuse_eng_home_page_sections() {
 
         if ( $learn_more_video_section ) : ?>
 
-        <section class="home-learn-more-video">
-          <div class="wrapper">
-            <div class="content-wrapper">
-              <?php echo wp_kses_post( $learn_more_video_section ); ?>
-            </div>
-          </div><!-- wrapper -->
-        </section><!-- home-learn-more-video -->
+          <section class="home-learn-more-video">
+            <div class="wrapper">
+              <div class="content-wrapper">
+                <?php echo wp_kses_post( $learn_more_video_section ); ?>
+              </div>
+            </div><!-- wrapper -->
+          </section><!-- home-learn-more-video -->
 
         <?php endif;
-
 
       endwhile;
 
