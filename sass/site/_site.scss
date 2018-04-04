@@ -22,7 +22,12 @@
 .wrapper {
   @include section-padding;
   @include padding-left-right;
-  @include max-width($max-width);
+  // @include max-width($max-width);
+  @include max-width(900px);
+
+  @include respond-to(large) {
+    @include max-width(1000px);
+  }
 }
 
 .roboto-thin-italic-text {

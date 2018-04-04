@@ -8,8 +8,12 @@
       cursor: pointer;
     }
 
+    #main {
+      padding-bottom: 2em;
+    }
+
     article {
-      margin: 0 0 1em;
+      margin: 0 0 2em;
     }
   }
 
@@ -79,29 +83,11 @@
 
   .entry-meta {
     margin-bottom: 0;
-
-    a {
-      font-family: $font__chunky;
-    }
-  }
-
-  .entry-content {
-    .more-link {
-      color: $color__brand-3;
-      padding-left: 5px;
-      text-decoration: underline;
-
-      &:hover {
-        color: $color__link-hover;
-      }
-    }
-  }
-
-  .entry-meta {
     @include font-smooth;
+
     a {
-      color: $color__brand-3;
       font-family: $font__chunky;
+      color: $color__brand-3;
 
       &:hover {
         color: $color__link-hover;
@@ -111,6 +97,26 @@
     .posted-on, .byline {
       color: $color__brand-3;
       font-family: $font__chunky;
+    }
+  }
+
+  .entry-content {
+
+    a {
+      color: $color__brand-3;
+
+      &:visited {
+        color: $color__brand-3;
+      }
+    }
+    .more-link {
+      color: $color__brand-3;
+      padding-left: 5px;
+      text-decoration: underline;
+
+      &:hover {
+        color: $color__link-hover;
+      }
     }
   }
 
@@ -124,7 +130,7 @@
       text-decoration: none;
       border-radius: 2px;
       font-family: $font__bold;
-      color: $color__brand-2;
+      color: $color__brand-3;
     }
     .page-numbers.current,
     a.page-numbers:hover {
@@ -133,16 +139,9 @@
     }
   }
 
-  .single-navigation {
-    display: block;
+  .post-navigation {
 
-    > div {
-      margin-bottom: 1em;
-    }
-  }
-
-  @include respond-to(small) {
-    .single-navigation {
+    .nav-links {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -170,6 +169,7 @@
           order: 1;
           padding-right: 2em;
           padding-top: 1.8em;
+          padding-bottom: 0;
         }
 
         #secondary {
@@ -195,7 +195,12 @@
           }
         }
       }
-
     }
+  }
+}
+
+.archive {
+  .page-header {
+    margin-bottom: 1em;
   }
 }
