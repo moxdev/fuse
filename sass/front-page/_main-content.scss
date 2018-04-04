@@ -1,12 +1,17 @@
 #primary {
   @include padding-left-right;
-  @include section-padding;
+  padding-top: 2.5em;
+  padding-bottom: 2em;
   text-align: center;
   background-color: $color__brand-2;
   color: #fff;
 
   #main {
     @include max-width(700px);
+  }
+
+  article {
+    margin: 0;
   }
 
   h1 {

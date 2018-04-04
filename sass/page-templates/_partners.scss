@@ -88,20 +88,38 @@
   // Custom GLightbox styles
 
   .goverlay {
-    background: rgba(2,181,205,0.75);
+    background: rgba(2,181,205,0.75) !important;
   }
 
   .glightbox-container .ginner-container {
-    background-color: #fff;
-    text-align: center;
+    background-color: #fff !important;
+    text-align: center !important;
   }
 
   .glightbox-container .gslide-description {
-    padding: 0 2em 1em; // comeback for mobile styles
-    font-size: 1.2em; // comeback for mobile styles
+    padding: 0 2em 1em !important; // comeback for mobile styles
+    font-size: 1.2em !important; // comeback for mobile styles
   }
 
   .gprev, .gnext {
-    background-color: transparent;
+    background-color: transparent !important;
+    font-family: $font__black !important;
+  }
+
+  .gslide-media, .glside-image {
+    padding: 1em 2em 0 !important;
+  }
+
+  .gslide-desc {
+    color: $color__brand-4 !important;
+    font-family: $font__light !important;
+  }
+
+  .glightbox-clean .gclose {
+    background-color: none !important;
+    opacity: 1 !important;
+    border: 1px solid white !important;
+    border-radius: 50% !important;
+    background-position: -60px 2px !important;
   }
 }

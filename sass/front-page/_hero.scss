@@ -1,8 +1,7 @@
 .hero {
   position: relative;
-  z-index: -1;
   width: 100%;
-  height: 550px;
+  height: 575px;
 
   // &:after {
   //   content: "";
@@ -21,19 +20,20 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index:-1;
+    z-index: -1;
   }
 
   .title-wrapper {
     position: absolute;
     width: 100%;
-    z-index: 1000;
+    z-index: 2000;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     line-height: 1.1;
     color: #fff;
+    padding-top: 2em;
     padding-left: 10px;
     padding-right: 10px;
 
@@ -108,6 +108,7 @@
 
     .title-wrapper {
       top: 60%;
+      padding-top: 0;
 
       .hero-title {
         font-size: 2.7em;
@@ -124,6 +125,17 @@
 
       .hero-divider {
         width: 500px;
+      }
+    }
+  }
+
+  @include respond-to(large) {
+    .title-wrapper {
+
+      .hero-divider {
+        hr {
+          bottom: 51px;
+        }
       }
     }
   }

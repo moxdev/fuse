@@ -22,6 +22,8 @@
       }
 
       li {
+        position: relative;
+        z-index: 99999;
 
         &:hover > ul,
         &.focus > ul {
