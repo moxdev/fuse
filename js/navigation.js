@@ -27,7 +27,7 @@ btn.addEventListener('click', function () {
 });
 
 const icons = Array.prototype.slice.call(
-  document.querySelectorAll('#mobile-main-menu .icon-plus')
+  document.querySelectorAll('#mobile-menu .icon-plus')
 );
 
 icons.map(item => {
