@@ -1678,6 +1678,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/page-templates\/_404-page.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/_404-page.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/page-templates\/_about.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2009,8 +2022,8 @@
 		"oA": 0,
 		"oAP": "\/screenshot.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
