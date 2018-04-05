@@ -18,6 +18,7 @@
     @include font_smooth;
     letter-spacing: 1px;
     text-shadow: 0 0 1px rgba(0, 0, 0, 1);
+    z-index: 99999;
 
     ul {
       clear: both;

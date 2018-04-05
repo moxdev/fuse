@@ -23,6 +23,11 @@
   }
 
   .site-branding {
+    .header-logo {
+      max-width: 180px;
+      margin: 0 auto;
+    }
+
     svg {
       width: 125px;
       height: 63px;

@@ -20,10 +20,8 @@ input[type="submit"] {
 	}
 }
 
-
 .btn {
   min-width: 150px;
-  // height: 35px;
   font-family: $font__bold;
   background: $color__background-button;
   margin-top: 1em;
@@ -36,6 +34,7 @@ input[type="submit"] {
   @include font-smooth;
   -webkit-appearance: none;
   transition: all .2s ease-in-out;
+  cursor: pointer;
 
 	&:hover {
     transform: scale(1.1);
