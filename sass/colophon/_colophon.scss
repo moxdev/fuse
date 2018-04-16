@@ -52,16 +52,52 @@
     }
 
     .social-media {
-      display: inline-flex;
-      justify-content: space-between;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
 
       li {
-        padding-right: 10px;
+        margin-bottom: 0;
 
-        &:last-child {
-          padding-right: 0;
+        a {
+          display: block;
+          text-indent: 110%;
+          white-space: nowrap;
+          overflow: hidden;
+          width: 40px;
+          height: 40px;
+          background-image: url(/wp-content/themes/fuse_eng/imgs/sprite-social-media-icons.svg);
+          background-size: auto 100%;
+          background-repeat: no-repeat;
         }
       }
+
+      .fb a {
+        background-position: 0 0;
+      }
+
+      .linked a {
+        background-position: -114px 0;
+      }
+
+      .tw a {
+        background-position: -36px 0;
+      }
+      .pin a {
+        background-position: -189px 0;
+      }
+      .insta a {
+        background-position: -227px 0;
+      }
+      .yt a {
+        background-position: -151px 0;
+      }
+      .goo a {
+        background-position: -75px 0;
+      }
+
     }
 
     .divider {
@@ -102,7 +138,7 @@
       .ftr-flex-wrapper {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
       }
 
       .ftr-flex-child {
@@ -114,6 +150,7 @@
 
         li {
           padding-right: 10px;
+          margin-bottom: 0;
         }
       }
 
@@ -151,13 +188,6 @@
       #footer-menu {
         li {
           padding-right: 6em;
-        }
-      }
-
-      .social-media {
-
-        li {
-          padding-right: 2em;
         }
       }
     }

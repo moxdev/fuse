@@ -1,3 +1,6 @@
+/*--------------------------------------------------------------
+## Fonts
+--------------------------------------------------------------*/
 @font-face {
   font-family: 'ChunkFive';
   src: url('fonts/ChunkFive.eot?#iefix') format('embedded-opentype'),
@@ -58,6 +61,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+/*--------------------------------------------------------------
+## Global Typography
+--------------------------------------------------------------*/
 
 html {
 	@include font-size(0.9);

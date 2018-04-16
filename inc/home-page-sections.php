@@ -82,7 +82,7 @@ function fuse_eng_home_page_sections() {
                               <div class="cell">
                                 <div class="cell-wrapper">
                                   <?php the_content(); ?>
-                                  <span class="title">&mdash; &nbsp; <?php the_title(); ?></span>
+                                  <!-- <span class="title">&mdash; &nbsp; <?php // the_title(); ?></span> -->
                                 </div>
                               </div><!-- cell -->
 

@@ -49,14 +49,18 @@
 
                 <div class="contact-information ftr-flex-child">
                   <div itemscope itemtype="http://schema.org/Organization">
-                    <span itemprop="name" class="company-name"><?php echo esc_html( $name ); ?></span>
+                    <!-- <span itemprop="name" class="company-name"><?php echo esc_html( $name ); ?></span> -->
                     <!-- <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                         <span itemprop="streetAddress"><?php // echo esc_html( $address ); ?>, </span>
                         <span itemprop="addressLocality"><?php // echo esc_html( $city ); ?>, </span>
                         <span itemprop="addressRegion"><?php // echo esc_html( $state ); ?></span>
                         <span itemprop="postalCode"><?php // echo esc_html( $zip ); ?></span>
                     </div> -->
+
+                    <?php if ( $phone ): ?>
                       <span class="footer-tel"><span itemprop="telephone"><a href="tel:<?php echo esc_html( $phone ); ?>"><?php echo esc_html( $phone ); ?></a> </span></span>
+                    <?php endif; ?>
+
                       <!-- <span class="footer-fax">Fax: <span itemprop="faxNumber"><?php // echo esc_html( $fax ); ?></span></span> -->
                       <!-- <span class="email"><a href="mailto:<?php // echo esc_html( $email ); ?>" itemprop="email"><?php // echo esc_html( $email ); ?></a></span> -->
                   </div>
@@ -82,43 +86,43 @@
 
                   <? if ( $fb ): ?>
                     <li class="fb">
-                      <a href="<?php echo wp_kses_post( $fb ); ?>" target="_blank">Facebook</a>
+                      <a href="<?php echo wp_kses_post( $fb ); ?>" target="_blank">Find Us On Facebook</a>
                     </li>
                   <?php endif; ?>
 
                   <? if ( $link ): ?>
                     <li class="linked">
-                      <a href="<?php echo wp_kses_post( $link ); ?>" target="_blank">LinkedIn</a>
+                      <a href="<?php echo wp_kses_post( $link ); ?>" target="_blank">Find Us On LinkedIn</a>
                     </li>
                   <?php endif; ?>
 
                   <? if ( $tw ): ?>
                     <li class="tw">
-                      <a href="<?php echo wp_kses_post( $tw ); ?>" target="_blank">Twitter</a>
+                      <a href="<?php echo wp_kses_post( $tw ); ?>" target="_blank">Follow Us On Twitter</a>
                     </li>
                   <?php endif; ?>
 
                   <? if ( $pin ): ?>
                     <li class="pin">
-                      <a href="<?php echo wp_kses_post( $pin ); ?>" target="_blank">Pinterest</a>
+                      <a href="<?php echo wp_kses_post( $pin ); ?>" target="_blank">Find Us On Pinterest</a>
                     </li>
                   <?php endif; ?>
 
                   <? if ( $inst ): ?>
                     <li class="insta">
-                      <a href="<?php echo wp_kses_post( $inst ); ?>" target="_blank">Instagram</a>
+                      <a href="<?php echo wp_kses_post( $inst ); ?>" target="_blank">Find Us On Instagram</a>
                     </li>
                   <?php endif; ?>
 
                   <? if ( $yt ): ?>
                     <li class="yt">
-                      <a href="<?php echo wp_kses_post( $yt ); ?>" target="_blank">YouTube</a>
+                      <a href="<?php echo wp_kses_post( $yt ); ?>" target="_blank">Watch Us On YouTube</a>
                     </li>
                   <?php endif; ?>
 
                   <? if ( $goo ): ?>
                     <li class="goo">
-                      <a href="<?php echo wp_kses_post( $goo ); ?>" target="_blank">Google+</a>
+                      <a href="<?php echo wp_kses_post( $goo ); ?>" target="_blank">Find Us On Google+</a>
                     </li>
                   <?php endif; ?>
 

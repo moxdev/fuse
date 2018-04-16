@@ -1,5 +1,9 @@
 .home {
 
+  h2 {
+    margin: 0 0 1em !important;
+  }
+
   @import 'hero';
   @import 'main-content';
   @import 'top-place-to-work';

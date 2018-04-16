@@ -27,7 +27,7 @@ function fuse_eng_partners_page_sections() {
               <a href="<?php echo $lightbox_img['url']; ?>" class="glightbox">
                 <img src="<?php echo $thumb_img['url']; ?>" alt="<?php echo $thumb_img['alt']; ?>" />
                 <div class="glightbox-desc">
-                    <p><?php echo wp_kses_post( $partner_description ); ?></p>
+                    <?php echo wp_kses_post( $partner_description ); ?>
                 </div>
               </a>
 

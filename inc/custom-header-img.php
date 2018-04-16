@@ -24,7 +24,7 @@ function fuse_eng_custom_header_section() {
             </span>
             <hr>
           </div>
-          <span class="hero-content"><?php echo wp_kses_post( $hero_content ); ?></span>
+          <div class="hero-content"><?php echo wp_kses_post( $hero_content ); ?></div>
         </div>
 
       <?php endif; ?>
@@ -53,7 +53,7 @@ function fuse_eng_custom_header_section() {
 
                 <span class="header-title"><?php fuse_eng_seo_blog_page_title(); ?></span>
 
-                <span class="header-sub-title"><?php echo wp_kses_post( $header_sub_title ); ?></span>
+                <div class="header-sub-title"><?php echo wp_kses_post( $header_sub_title ); ?></div>
 
                 <span class="blue-bolt">
                   <svg xmlns="http://www.w3.org/2000/svg" width="46.61" height="78.51" viewBox="0 0 46.61 78.51"><defs><style>.a{fill:#00bed5;fill-rule:evenodd;}</style></defs><title>lightening-bolt</title><polygon class="a" points="37.01 0 15.42 2.13 0 40.56 23.94 36.09 4.18 78.51 46.61 23.48 21.35 26.33 37.01 0"/></svg>

@@ -24,7 +24,7 @@
       background-image: url(/wp-content/themes/fuse_eng/imgs/right-spaceship.svg);
       background-repeat: no-repeat;
       background-position: bottom right;
-      background-size: 40%;
+      background-size: 125px;
     }
 
     .widget-do-etfw {
@@ -58,13 +58,51 @@
       }
 
       .social-media {
-        li {
-          padding-right: 10px;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding: 0;
 
-          &:last-child {
-            padding-right: 0;
+        li {
+          margin-bottom: 0;
+
+          a {
+            display: block;
+            text-indent: 110%;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 40px;
+            height: 40px;
+            background-image: url(/wp-content/themes/fuse_eng/imgs/sprite-social-media-icons.svg);
+            background-size: auto 100%;
+            background-repeat: no-repeat;
           }
         }
+
+        .fb a {
+          background-position: 0 0;
+        }
+
+        .linked a {
+          background-position: -114px 0;
+        }
+
+        .tw a {
+          background-position: -36px 0;
+        }
+        .pin a {
+          background-position: -189px 0;
+        }
+        .insta a {
+          background-position: -227px 0;
+        }
+        .yt a {
+          background-position: -151px 0;
+        }
+        .goo a {
+          background-position: -75px 0;
+        }
+
       }
     }
   }
