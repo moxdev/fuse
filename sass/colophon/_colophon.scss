@@ -6,6 +6,7 @@
 
   .site-info {
     text-align: center;
+    padding-top: 1em;
     padding-bottom: 2em;
 
     .wrapper {
@@ -25,20 +26,15 @@
       padding: 0;
     }
 
-    .ftr-flex-child,
-    #footer-menu li {
-      margin-bottom: .5em
+    .ftr-flex-child {
+      margin-bottom: .5em;
     }
 
-    .logo {
+    .footer-logo {
+      margin-bottom: 1em;
       svg {
         width: 120px;
-      }
-    }
-
-    #footer-menu {
-      li:last-child {
-        padding-right: 0;
+        height: 60px;
       }
     }
 
@@ -131,27 +127,10 @@
     }
 
     @include respond-to(small) {
-      .logo {
-        margin-bottom: 1rem;
-      }
-
       .ftr-flex-wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
-      }
-
-      .ftr-flex-child {
-        flex: 1 1 33%;
-      }
-
-      #footer-menu {
-        display: flex;
-
-        li {
-          padding-right: 10px;
-          margin-bottom: 0;
-        }
       }
 
       .divider {
@@ -167,12 +146,6 @@
     }
 
     @include respond-to(medium) {
-      #footer-menu {
-        li {
-          padding-right: 3em;
-        }
-      }
-
       .social-media {
         li {
           padding-right: 2em;
@@ -183,12 +156,6 @@
     @include respond-to(x-large) {
       .wrapper {
         max-width: 1500px;
-      }
-
-      #footer-menu {
-        li {
-          padding-right: 6em;
-        }
       }
     }
   }

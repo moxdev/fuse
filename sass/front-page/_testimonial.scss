@@ -6,8 +6,6 @@
 
 
   .wrapper {
-    background: url(/wp-content/themes/fuse_eng/imgs/robot-standing.svg) left bottom no-repeat, url(/wp-content/themes/fuse_eng/imgs/robot-rolling.svg) right bottom no-repeat;
-    background-size: 70px;
     max-width: 1350px;
     margin: 0 auto;
 
@@ -100,23 +98,7 @@
     }
   }
 
-  @include respond-to(mobile) {
-    .wrapper {
-      background-size: 80px;
-    }
-  }
-
-  @include respond-to(x-small) {
-    .wrapper {
-      background-size: 100px;
-    }
-  }
-
   @include respond-to(small) {
-    .wrapper {
-      background-size: 150px;
-    }
-
     .divider {
       width: 300px;
 
@@ -141,10 +123,6 @@
   }
 
   @include respond-to(large) {
-    .wrapper {
-      background-size: 175px;
-    }
-
     .inner-wrapper {
       max-width: 900px;
     }

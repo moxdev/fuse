@@ -52,11 +52,6 @@
     }
 
     .content-wrapper {
-      background-image: url(/wp-content/themes/fuse_eng/imgs/left-spaceship.svg), url(/wp-content/themes/fuse_eng/imgs/right-spaceship.svg);
-      background-repeat: no-repeat;
-      background-position: top, bottom, center;
-      background-size: 125px;
-      padding: 6em 0;
       max-width: 800px;
       margin: 0 auto;
 
@@ -97,16 +92,7 @@
     }
 
     @include respond-to(medium) {
-      .content-wrapper {
-        background-image: none;
-        padding: 0;
-      }
-
       .wysiwig-flex-wrapper {
-        background-image: url(/wp-content/themes/fuse_eng/imgs/left-spaceship.svg), url(/wp-content/themes/fuse_eng/imgs/right-spaceship.svg);
-        background-position: 0px, 643px, center;
-        background-size: 150px;
-        background-repeat: no-repeat;
         max-width: 800px;
       }
     }
@@ -117,7 +103,6 @@
 
         .wysiwig-flex-wrapper {
           max-width: 900px;
-          background-position: 0px, 748px, center;
 
           img {
             margin: 0 1.5em;

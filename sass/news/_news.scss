@@ -20,13 +20,6 @@
   #secondary {
     @include section-padding;
 
-    .sidebar-wrapper {
-      background-image: url(/wp-content/themes/fuse_eng/imgs/right-spaceship.svg);
-      background-repeat: no-repeat;
-      background-position: bottom right;
-      background-size: 125px;
-    }
-
     .widget-do-etfw {
       h2 {
         color: $color__brand-3;
